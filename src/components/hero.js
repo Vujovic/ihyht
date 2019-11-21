@@ -22,14 +22,14 @@ export default () => {
   return (
     <Hero>
       <ParticleBg />
-      <div className='earthImage'>
+      <div className="earthImage">
         <Img
-          className='earth'
-          draggable='false'
+          className="earth"
+          draggable="false"
           fluid={data.earth.childImageSharp.fluid}
         />
       </div>
-      <div class='text'>
+      <div class="text">
         <h2>数据智能解决方案提供商</h2>
         <h1>云服务+大数据</h1>
         <button>学到更多</button>
