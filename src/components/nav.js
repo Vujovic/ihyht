@@ -9,6 +9,7 @@ import search from "../images/search.png"
 
 import "../styles/hamburger.css"
 
+ReactModal.setAppElement(`#___gatsby`)
 export default class Navigation extends React.Component {
   state = {
     isModalOpen: false,
@@ -21,52 +22,56 @@ export default class Navigation extends React.Component {
   render() {
     return (
       <Nav>
-        <Link to='/'>
+        <Link to="/">
           <Logo />
         </Link>
-        <div className='button'>
+        <div className="button">
           <button
             onClick={this.handleMenu}
-            type='button'
+            type="button"
             className={
               this.state.isMenuActive
-                ? "hamburger hamburger--spin"
-                : "hamburger hamburger--spin is-active"
+                ? "hamburger hamburger--spin is-active"
+                : "hamburger hamburger--spin"
             }
           >
-            <span className='hamburger-box'>
-              <span class='hamburger-inner'></span>
+            <span className="hamburger-box">
+              <span className="hamburger-inner"></span>
             </span>
           </button>
         </div>
-        <div className={this.state.isMenuActive ? "menu hidden" : "menu"}>
+        <div className={this.state.isMenuActive ? "menu" : "menu hidden"}>
           <ul>
             <li>
-              <Link to='/products'>产品中心</Link>
+              <Link to="/products">产品中心</Link>
             </li>
             <li>
-              <Link to='/solutions'>解决方案</Link>
+              <Link to="/solutions">解决方案</Link>
             </li>
             <li>
-              <Link to='/services'>服务支持</Link>
+              <Link to="/services">服务支持</Link>
             </li>
             <li>
-              <Link to='/success-cases'>成功案例</Link>
+              <Link to="/success-cases">成功案例</Link>
             </li>
             <li>
-              <Link to='/about-us'>关于我们</Link>
+              <Link to="/about-us">关于我们</Link>
             </li>
           </ul>
-          <div className='icons'>
-            <input type='search' />
-            <Link to='#' onClick={this.handleModal}>
+          <div className="icons">
+            <input type="search" />
+            <Link
+              to="#contact"
+              onClick={this.handleModal}
+              aria-label="toggle modal"
+            >
               <Contact />
             </Link>
             <ReactModal
               style={customStyles}
               isOpen={this.state.isModalOpen}
               onRequestClose={this.handleModal}
-              contentLabel='Contact form'
+              contentLabel="Contact form"
             >
               <h1>Test</h1>
             </ReactModal>
@@ -84,8 +89,8 @@ const customStyles = {
   },
 }
 
+// Styled-Components
 const Nav = styled.nav`
-  background-color: #434343;
   color: #fff;
   height: 75px;
   display: inline-flex;
@@ -106,9 +111,9 @@ const Nav = styled.nav`
       justify-content: space-around;
       list-style: none;
       a {
-        font-size: var(--font-size__small);
+        font-size: 18px;
+        font-weight: 400;
         text-decoration: none;
-        letter-spacing: 0.15em;
         color: #fff;
         display: inline-block;
         padding: 15px 20px;

@@ -8,6 +8,7 @@ export default props => (
       onClick={props.toggleMenu}
       className='hamburger hamburger--spin'
       type='button'
+      aria-label='menu'
     >
       <span className='hamburger-box'>
         <span class='hamburger-inner'></span>
