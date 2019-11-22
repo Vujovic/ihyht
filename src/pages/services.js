@@ -18,7 +18,7 @@ export default () => {
       services: file(relativePath: { eq: "services-main.png" }) {
         childImageSharp {
           fluid(maxWidth: 1280, quality: 100) {
-            ...GatsbyImageSharpFluid_withWebp_noBase64
+            ...GatsbyImageSharpFluid_withWebp_tracedSVG
           }
         }
       }
