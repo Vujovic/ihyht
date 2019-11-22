@@ -97,11 +97,12 @@ const Nav = styled.nav`
   background-color: #fff;
   border-radius: 0 0 50px 50px;
   height: 75px;
+  margin-left: 2.5%;
   display: inline-flex;
   justify-content: space-around;
   align-items: center;
   position: absolute;
-  width: 100%;
+  width: 95%;
   z-index: 20;
   > * {
     text-align: center;
@@ -181,6 +182,7 @@ const Nav = styled.nav`
   }
   @media screen and (max-width: 1280px) {
     border-radius: 0;
+    width: 100%;
     .menu {
       background-color: #fff;
       flex-direction: column;

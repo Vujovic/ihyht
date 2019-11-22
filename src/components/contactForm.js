@@ -53,8 +53,10 @@ export default () => (
 )
 
 const ContactForm = styled.div`
+  animation: 1s slideLeft;
   background-color: #fff;
   box-shadow: 0 0 16px rgba(0, 0, 0, 0.15);
+  margin-right: 100px;
   max-width: 960px;
   padding: 20px 0;
   h2 {
@@ -93,6 +95,36 @@ const ContactForm = styled.div`
       border-radius: 50px;
       color: #fff;
       cursor: pointer;
+    }
+  }
+  @media screen and (max-width: 1280px) {
+    box-shadow: none;
+    margin: 0 0 20px 0;
+    padding: 0;
+    h2,
+    h3 {
+      padding: 0;
+    }
+    form {
+      padding: 0;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    form {
+      input,
+      textarea,
+      #submit {
+        width: 60vw;
+      }
+    }
+  }
+  @keyframes slideLeft {
+    0% {
+      transform: translateX(50px);
+    }
+    100% {
+      transform: translateX(0);
     }
   }
 `

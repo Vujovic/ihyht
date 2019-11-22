@@ -20,6 +20,7 @@ export default () => (
 )
 
 const ContactCard = styled.div`
+  animation: 1s slideUp;
   background-color: #2e83e6;
   color: #fff;
   padding: 20px 30px;
@@ -39,6 +40,20 @@ const ContactCard = styled.div`
     svg {
       margin-left: 3px;
       width: 19px;
+    }
+  }
+  @media screen and (max-width: 1280px) {
+    transform: none;
+  }
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
+  @keyframes slideUp {
+    0% {
+      transform: translate(100px, 50px);
+    }
+    100% {
+      transform: translate(100px, 0);
     }
   }
 `
