@@ -3,8 +3,10 @@ import { Link } from "gatsby"
 import styled from "styled-components"
 import ReactModal from "react-modal"
 
+import Contact from "./contact"
+
 import Logo from "./svg/logo"
-import Contact from "./svg/contact"
+import ContactIcon from "./svg/contact"
 import search from "../images/search.png"
 
 import "../styles/hamburger.css"
@@ -65,7 +67,7 @@ export default class Navigation extends React.Component {
               onClick={this.handleModal}
               aria-label="toggle modal"
             >
-              <Contact />
+              <ContactIcon />
             </Link>
             <ReactModal
               style={customStyles}
@@ -73,7 +75,7 @@ export default class Navigation extends React.Component {
               onRequestClose={this.handleModal}
               contentLabel="Contact form"
             >
-              <h1>Test</h1>
+              <Contact />
             </ReactModal>
           </div>
         </div>
@@ -91,7 +93,9 @@ const customStyles = {
 
 // Styled-Components
 const Nav = styled.nav`
-  color: #fff;
+  animation: 1s forwards navAnimate;
+  background-color: #fff;
+  border-radius: 0 0 50px 50px;
   height: 75px;
   display: inline-flex;
   justify-content: space-around;
@@ -112,9 +116,9 @@ const Nav = styled.nav`
       list-style: none;
       a {
         font-size: 18px;
-        font-weight: 400;
+        font-weight: 600;
         text-decoration: none;
-        color: #fff;
+        color: #3379e0;
         display: inline-block;
         padding: 15px 20px;
         position: relative;
@@ -126,7 +130,7 @@ const Nav = styled.nav`
           height: 2px;
           left: 50%;
           position: absolute;
-          background: #fff;
+          background: #3379e0;
           transition: width 0.3s ease 0s, left 0.3s ease 0s;
           width: 0;
         }
@@ -142,7 +146,7 @@ const Nav = styled.nav`
       justify-content: center;
       margin-left: 40px;
       input {
-        background: #fff url(${search}) no-repeat 10px center;
+        background: #3379e0 url(${search}) no-repeat 10px center;
         border: none;
         border-radius: 50px;
         color: rgba(255, 255, 255, 0);
@@ -155,7 +159,7 @@ const Nav = styled.nav`
           transform: scale(1.2);
         }
         :focus {
-          color: #434343;
+          color: #fff;
           cursor: auto;
           padding-left: 40px;
           transform: scale(1);
@@ -176,9 +180,9 @@ const Nav = styled.nav`
     display: none;
   }
   @media screen and (max-width: 1280px) {
+    border-radius: 0;
     .menu {
       background-color: #fff;
-      color: #3379e0;
       flex-direction: column;
       justify-content: space-evenly;
       height: calc(100vh - 75px);
@@ -189,7 +193,6 @@ const Nav = styled.nav`
       ul {
         flex-direction: column;
         a {
-          color: #3379e0;
           font-size: 24px;
         }
       }
@@ -201,6 +204,14 @@ const Nav = styled.nav`
   @media screen and (max-width: 1280px) {
     .menu {
       width: 100%;
+    }
+  }
+  @keyframes navAnimate {
+    0% {
+      transform: translateY(-75px);
+    }
+    100% {
+      transform: translateY(0);
     }
   }
 `

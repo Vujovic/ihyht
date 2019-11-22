@@ -25,11 +25,11 @@ export default () => {
       <div className="earthImage">
         <Img
           className="earth"
-          draggable="false"
+          draggable={false}
           fluid={data.earth.childImageSharp.fluid}
         />
       </div>
-      <div class="text">
+      <div className="text">
         <h2>数据智能解决方案提供商</h2>
         <h1>云服务+大数据</h1>
         <button>学到更多</button>
