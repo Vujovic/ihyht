@@ -10,7 +10,7 @@ export default () => (
       action="https://formsubmit.io/send/hello@njegos.dev"
       method="POST"
     >
-      <input name="_formsubmit_id" type="hidden" />
+      <input name="_formsubmit_id" type="text" style={{ display: "none" }} />
       <input
         name="_redirect"
         type="hidden"
