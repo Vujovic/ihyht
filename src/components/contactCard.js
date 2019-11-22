@@ -1,7 +1,10 @@
 import React from "react"
 import styled from "styled-components"
 
+import ContactQR from "./contactQR"
+
 import ContactIcon from "./svg/contact"
+import PhoneIcon from "./svg/phone"
 
 export default () => (
   <ContactCard>
@@ -10,27 +13,32 @@ export default () => (
       <ContactIcon /> hyhtoffw@ihyht.com
     </p>
     <p className="contact phone">
-      <ContactIcon /> +86 188 1111 1111
+      <PhoneIcon /> +86 188 1111 1111
     </p>
-    <p className="contact">WORK IN PROGRESS</p>
+    <ContactQR />
   </ContactCard>
 )
 
 const ContactCard = styled.div`
   background-color: #2e83e6;
   color: #fff;
-  max-height: 40vh;
   padding: 20px 30px;
-  transform: translateX(150px);
+  transform: translateX(100px);
   .contact {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    margin-top: 15px;
+    margin-top: 45px;
     svg {
       fill: #fff;
       margin-right: 15px;
-      width: 30px;
+      width: 25px;
+    }
+  }
+  .phone {
+    svg {
+      margin-left: 3px;
+      width: 19px;
     }
   }
 `

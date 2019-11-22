@@ -6,7 +6,7 @@ import Hero from "../components/hero"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title='Home' />
+    <SEO title="Home" />
     <Hero />
     <div
       style={{

@@ -10,7 +10,6 @@ export default () => (
       action="https://formsubmit.io/send/hello@njegos.dev"
       method="POST"
     >
-      <input name="_formsubmit_id" type="text" style={{ display: "none" }} />
       <input
         name="_redirect"
         type="hidden"
@@ -47,6 +46,7 @@ export default () => (
         留言信息
         <textarea name="message" id="message" rows="3" required />
       </label>
+      <input name="_formsubmit_id" type="text" style={{ display: "none" }} />
       <input type="submit" id="submit" />
     </form>
   </ContactForm>
@@ -59,20 +59,18 @@ const ContactForm = styled.div`
   padding: 20px 0;
   h2 {
     padding: 0 50px 0 200px;
-    text-align: center;
   }
   h3 {
     color: #555555;
     font-weight: 400;
     padding: 0 50px 0 200px;
-    text-align: center;
   }
   form {
     display: flex;
     align-items: center;
     flex-direction: column;
     margin: 0 auto;
-    padding: 0 50px 0 200px;
+    padding: 0 100px 0 200px;
     label {
       margin: 15px 0;
     }
