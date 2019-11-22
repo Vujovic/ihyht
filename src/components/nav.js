@@ -62,13 +62,13 @@ export default class Navigation extends React.Component {
           </ul>
           <div className="icons">
             <input type="search" />
-            <Link
-              to="#contact"
+            <button
+              className="letter"
               onClick={this.handleModal}
               aria-label="toggle modal"
             >
               <ContactIcon />
-            </Link>
+            </button>
             <ReactModal
               style={customStyles}
               isOpen={this.state.isModalOpen}
@@ -96,6 +96,7 @@ const Nav = styled.nav`
   animation: 1s forwards navAnimate;
   background-color: #fff;
   border-radius: 0 0 50px 50px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
   height: 75px;
   margin-left: 2.5%;
   display: inline-flex;
@@ -167,6 +168,12 @@ const Nav = styled.nav`
           width: 250px;
         }
       }
+      .letter {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+      }
+
       svg {
         margin-left: 30px;
         width: 30px;
