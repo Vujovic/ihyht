@@ -43,6 +43,7 @@ const ContactCard = styled.div`
     }
   }
   @media screen and (max-width: 1280px) {
+    animation: none;
     transform: none;
   }
   @media screen and (max-width: 768px) {

@@ -182,6 +182,7 @@ const Nav = styled.nav`
   }
   @media screen and (max-width: 1280px) {
     border-radius: 0;
+    margin-left: 0;
     width: 100%;
     .menu {
       background-color: #fff;
@@ -196,6 +197,14 @@ const Nav = styled.nav`
         flex-direction: column;
         a {
           font-size: 24px;
+        }
+      }
+      .icons {
+        flex-direction: column;
+        margin: 0;
+        svg {
+          margin-top: 20px;
+          margin-left: 0;
         }
       }
     }
