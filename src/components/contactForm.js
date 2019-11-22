@@ -37,7 +37,7 @@ export default () => (
       </label>
       <label>
         电子邮件
-        <input type="email" id="email" type="email" required />
+        <input type="email" name="email" id="email" required />
       </label>
       <label>
         项目类型
