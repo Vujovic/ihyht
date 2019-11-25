@@ -32,8 +32,14 @@ module.exports = {
       resolve: `gatsby-plugin-web-font-loader`,
       options: {
         google: {
-          families: [`Noto Serif SC: 400, 600, 700, 900`],
+          families: [`Noto Serif SC`],
         },
+      },
+    },
+    {
+      resolve: `gatsby-plugin-purgecss`,
+      options: {
+        printRejected: true,
       },
     },
     `gatsby-plugin-offline`,

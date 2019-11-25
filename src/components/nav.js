@@ -24,13 +24,14 @@ export default class Navigation extends React.Component {
   render() {
     return (
       <Nav>
-        <Link to="/">
+        <Link to="/" aria-label="Company Logo. Click to go back home.">
           <Logo />
         </Link>
         <div className="button">
           <button
             onClick={this.handleMenu}
             type="button"
+            aria-label="Menu"
             className={
               this.state.isMenuActive
                 ? "hamburger hamburger--spin is-active"
@@ -61,7 +62,7 @@ export default class Navigation extends React.Component {
             </li>
           </ul>
           <div className="icons">
-            <input type="search" />
+            <input type="search" aria-label="Search" />
             <button
               className="letter"
               onClick={this.handleModal}
