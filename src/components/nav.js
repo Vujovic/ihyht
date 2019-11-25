@@ -117,8 +117,8 @@ const Nav = styled.nav`
       justify-content: space-around;
       list-style: none;
       a {
-        font-size: 18px;
-        font-weight: 600;
+        font-size: 19px;
+        font-weight: 900;
         text-decoration: none;
         color: #3379e0;
         display: inline-block;

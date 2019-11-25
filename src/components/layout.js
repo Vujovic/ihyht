@@ -19,7 +19,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body, * {
-    font-family: 'Noto Sans SC', sans-serif;
+    font-family: 'Noto Serif SC', serif;
     margin: 0;
     padding: 0;
     outline: none;
@@ -31,6 +31,7 @@ const GlobalStyle = createGlobalStyle`
 
   html,
   body {
+    color: #434343;
     overflow-x: hidden;
     position: relative;
   }

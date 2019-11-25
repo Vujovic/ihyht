@@ -32,7 +32,7 @@ module.exports = {
       resolve: `gatsby-plugin-web-font-loader`,
       options: {
         google: {
-          families: [`Noto Sans SC: 400, 600, 700`],
+          families: [`Noto Serif SC: 400, 600, 700, 900`],
         },
       },
     },

@@ -30,8 +30,15 @@ export default () => {
         />
       </div>
       <div className="text">
-        <h2>数据智能解决方案提供商</h2>
-        <h1>云服务+大数据</h1>
+        <h2>
+          探索财税大数据奥妙，为政府决策、
+          <br /> 企业服务、金融风控提供数据服务和科技赋能
+        </h2>
+        <h1>
+          财税大数据资产管理
+          <br />
+          与运营服务提供商
+        </h1>
         <button>学到更多</button>
       </div>
     </Hero>
@@ -74,11 +81,13 @@ const Hero = styled.section`
       font-size: 72px;
       opacity: 0;
       padding: 80px 0;
+      text-align: center;
     }
     h2 {
       animation: 1s forwards heroText;
       opacity: 0;
       font-size: var(--font-size__large);
+      text-align: center;
     }
     button {
       animation: 1s forwards heroText;
