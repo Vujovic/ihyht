@@ -37,28 +37,34 @@ export default () => (
 
 const Introduction = styled.section`
   background-color: #fff;
-  max-width: 70%;
-  margin: 0 auto;
   padding: 75px 0;
   position: relative;
   text-align: center;
   z-index: 20;
   > h2 {
-    font-size: 48px;
+    font-size: 36px;
     margin-bottom: 75px;
   }
   .cards {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 70%;
     .card {
       font-size: 24px;
-
+      margin: 10px;
       h2 {
         font-weight: 400;
       }
       svg {
         height: 120px;
       }
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .cards {
+      flex-direction: column;
     }
   }
 `

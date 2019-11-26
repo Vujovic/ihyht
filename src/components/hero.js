@@ -78,7 +78,7 @@ const Hero = styled.section`
     h1 {
       animation: 1s forwards heroText;
       animation-delay: 0.2s;
-      font-size: 72px;
+      font-size: 48px;
       opacity: 0;
       padding: 80px 0;
       text-align: center;
@@ -86,7 +86,7 @@ const Hero = styled.section`
     h2 {
       animation: 1s forwards heroText;
       opacity: 0;
-      font-size: var(--font-size__large);
+      font-size: 36px;
       text-align: center;
     }
     button {

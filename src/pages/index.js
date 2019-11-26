@@ -5,6 +5,9 @@ import SEO from "../components/seo"
 import Hero from "../components/hero"
 import Introduction from "../components/companyIntro"
 import WhyChooseUs from "../components/whyChooseUs"
+import Products from "../components/products"
+import NewsCenter from "../components/newsCenter"
+import Partners from "../components/partners"
 
 const IndexPage = () => (
   <Layout>
@@ -12,6 +15,9 @@ const IndexPage = () => (
     <Hero />
     <Introduction />
     <WhyChooseUs />
+    <Products />
+    <NewsCenter />
+    <Partners />
   </Layout>
 )
 

@@ -35,6 +35,22 @@ const GlobalStyle = createGlobalStyle`
     overflow-x: hidden;
     position: relative;
   }
+
+  body, * {
+    ::-webkit-scrollbar {
+      height: 3px;
+      width: 3px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background-color: #aaa;
+    }
+  }
+
+  a {
+    color: #3379e0;
+    text-decoration: none;
+  }
 `
 
 export default Layout

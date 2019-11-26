@@ -36,7 +36,7 @@ const WhyChooseUs = styled.section`
   padding: 75px 0;
   text-align: center;
   > h2 {
-    font-size: 48px;
+    font-size: 36px;
     margin-bottom: 75px;
   }
   .section-content {
@@ -57,6 +57,18 @@ const WhyChooseUs = styled.section`
         svg {
           height: 24px;
           margin-right: 25px;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 1024px) {
+    .section-content {
+      flex-direction: column;
+      ul {
+        li {
+          font-size: 16px;
+          margin: 0 10px 20px 10px;
+          padding: 20px 70px;
         }
       }
     }

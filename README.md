@@ -2,7 +2,7 @@ Todo
 
 [ ] - contact module responsive
 
-[ ] - finish home page
+[x] - finish home page
 
 [ ] - finish products page
 
