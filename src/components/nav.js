@@ -103,9 +103,9 @@ const Nav = styled.nav`
   display: inline-flex;
   justify-content: space-around;
   align-items: center;
-  position: absolute;
+  position: fixed;
   width: 95%;
-  z-index: 20;
+  z-index: 40;
   > * {
     text-align: center;
   }

@@ -31,7 +31,7 @@ export default () => (
       d="M27.8 91.8v17.4l16-17.4h29.5c7.2 0 13-5.9 13-13.1V49.4c0-7.3-5.8-13.2-13-13.2h-57c-7.2 0-13 5.9-13 13.2v29.3c0 7.2 5.8 13.1 13 13.1h11.5zm-3.3 25.8V95.1h-8.2C7.3 95.1 0 87.8 0 78.7V49.4c0-9.1 7.3-16.5 16.3-16.5h57c9 0 16.3 7.4 16.3 16.5v29.3c0 9-7.3 16.4-16.3 16.4H45.2l-20.7 22.5z"
       fill="url(#paint5_linear)"
     />
-    <g clip-path="url(#clip0)">
+    <g clipPath="url(#clip0)">
       <path d="M143 33.1h-1v.5h1v-.5z" fill="#2EC5E6" />
       <path d="M142 34.3a1.1 1.1 0 100-2.3 1.1 1.1 0 000 2.3z" fill="#2EC5E6" />
       <path d="M142 34.2a1 1 0 100-2.1 1 1 0 000 2.1z" fill="#2DC3E4" />
@@ -65,23 +65,23 @@ export default () => (
       d="M62.8 98l.3 1a70.5 70.5 0 012.7 9H83a45.6 45.6 0 013-9.3l.4-.7.6-.5A20.8 20.8 0 0074.5 60a20.9 20.9 0 00-12.4 37.5l.7.6zm23 13.3H63.1c0-1.7-2-8.6-3-11.2a24 24 0 0114.4-43.4A24.1 24.1 0 0189 100.1c-1 2.3-3.2 8.7-3.2 11.2z"
       fill="url(#paint9_linear)"
     />
-    <g clip-path="url(#clip1)">
+    <g clipPath="url(#clip1)">
       <path d="M343 262.3h-1v.4h1v-.4z" fill="#110438" />
       <path d="M343 262.3h-1v.4h1v-.4z" fill="url(#paint10_radial)" />
       <path
         d="M342.3 262.7a.4.4 0 100-.7.4.4 0 000 .7z"
         fill="url(#paint11_linear)"
-        fill-opacity=".3"
+        fillOpacity=".3"
       />
       <path
         d="M342.7 262.7a.4.4 0 100-.7.4.4 0 000 .7z"
         fill="url(#paint12_linear)"
-        fill-opacity=".3"
+        fillOpacity=".3"
       />
       <path
         d="M342.5 262.7a.4.4 0 100-.8.4.4 0 000 .8z"
         fill="url(#paint13_linear)"
-        fill-opacity=".3"
+        fillOpacity=".3"
       />
     </g>
     <path
@@ -129,8 +129,8 @@ export default () => (
         y2="15"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#29A0C6" />
-        <stop offset="1" stop-color="#2EC5E6" />
+        <stop stopColor="#29A0C6" />
+        <stop offset="1" stopColor="#2EC5E6" />
       </linearGradient>
       <linearGradient
         id="paint1_linear"
@@ -140,8 +140,8 @@ export default () => (
         y2="18"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#29A0C6" />
-        <stop offset="1" stop-color="#2EC5E6" />
+        <stop stopColor="#29A0C6" />
+        <stop offset="1" stopColor="#2EC5E6" />
       </linearGradient>
       <linearGradient
         id="paint2_linear"
@@ -151,8 +151,8 @@ export default () => (
         y2="38.2"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#29A0C6" />
-        <stop offset="1" stop-color="#2EC5E6" />
+        <stop stopColor="#29A0C6" />
+        <stop offset="1" stopColor="#2EC5E6" />
       </linearGradient>
       <linearGradient
         id="paint3_linear"
@@ -162,8 +162,8 @@ export default () => (
         y2="38.2"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#29A0C6" />
-        <stop offset="1" stop-color="#2EC5E6" />
+        <stop stopColor="#29A0C6" />
+        <stop offset="1" stopColor="#2EC5E6" />
       </linearGradient>
       <linearGradient
         id="paint4_linear"
@@ -173,8 +173,8 @@ export default () => (
         y2="38.2"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#29A0C6" />
-        <stop offset="1" stop-color="#2EC5E6" />
+        <stop stopColor="#29A0C6" />
+        <stop offset="1" stopColor="#2EC5E6" />
       </linearGradient>
       <linearGradient
         id="paint5_linear"
@@ -184,8 +184,8 @@ export default () => (
         y2="39.6"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#29A0C6" />
-        <stop offset="1" stop-color="#2EC5E6" />
+        <stop stopColor="#29A0C6" />
+        <stop offset="1" stopColor="#2EC5E6" />
       </linearGradient>
       <linearGradient
         id="paint6_linear"
@@ -195,8 +195,8 @@ export default () => (
         y2="60.2"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#29A0C6" />
-        <stop offset="1" stop-color="#2EC5E6" />
+        <stop stopColor="#29A0C6" />
+        <stop offset="1" stopColor="#2EC5E6" />
       </linearGradient>
       <linearGradient
         id="paint7_linear"
@@ -206,8 +206,8 @@ export default () => (
         y2="60.2"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#29A0C6" />
-        <stop offset="1" stop-color="#2EC5E6" />
+        <stop stopColor="#29A0C6" />
+        <stop offset="1" stopColor="#2EC5E6" />
       </linearGradient>
       <linearGradient
         id="paint8_linear"
@@ -217,8 +217,8 @@ export default () => (
         y2="60.2"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#29A0C6" />
-        <stop offset="1" stop-color="#2EC5E6" />
+        <stop stopColor="#29A0C6" />
+        <stop offset="1" stopColor="#2EC5E6" />
       </linearGradient>
       <linearGradient
         id="paint9_linear"
@@ -228,8 +228,8 @@ export default () => (
         y2="68.6"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#29A0C6" />
-        <stop offset="1" stop-color="#2EC5E6" />
+        <stop stopColor="#29A0C6" />
+        <stop offset="1" stopColor="#2EC5E6" />
       </linearGradient>
       <linearGradient
         id="paint11_linear"
@@ -239,8 +239,8 @@ export default () => (
         y2="262.7"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#29A0C6" stop-opacity="0" />
-        <stop offset="1" stop-color="#29A0C6" stop-opacity=".5" />
+        <stop stopColor="#29A0C6" stopOpacity="0" />
+        <stop offset="1" stopColor="#29A0C6" stopOpacity=".5" />
       </linearGradient>
       <linearGradient
         id="paint12_linear"
@@ -250,8 +250,8 @@ export default () => (
         y2="262.7"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#29A0C6" stop-opacity="0" />
-        <stop offset="1" stop-color="#29A0C6" stop-opacity=".5" />
+        <stop stopColor="#29A0C6" stopOpacity="0" />
+        <stop offset="1" stopColor="#29A0C6" stopOpacity=".5" />
       </linearGradient>
       <linearGradient
         id="paint13_linear"
@@ -261,8 +261,8 @@ export default () => (
         y2="262.7"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#29A0C6" stop-opacity="0" />
-        <stop offset="1" stop-color="#29A0C6" stop-opacity=".5" />
+        <stop stopColor="#29A0C6" stopOpacity="0" />
+        <stop offset="1" stopColor="#29A0C6" stopOpacity=".5" />
       </linearGradient>
       <linearGradient
         id="paint14_linear"
@@ -272,8 +272,8 @@ export default () => (
         y2="115.8"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#29A0C6" />
-        <stop offset="1" stop-color="#2EC5E6" />
+        <stop stopColor="#29A0C6" />
+        <stop offset="1" stopColor="#2EC5E6" />
       </linearGradient>
       <linearGradient
         id="paint15_linear"
@@ -283,8 +283,8 @@ export default () => (
         y2="95.8"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#29A0C6" />
-        <stop offset="1" stop-color="#2EC5E6" />
+        <stop stopColor="#29A0C6" />
+        <stop offset="1" stopColor="#2EC5E6" />
       </linearGradient>
       <linearGradient
         id="paint16_linear"
@@ -294,8 +294,8 @@ export default () => (
         y2="107.7"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#29A0C6" />
-        <stop offset="1" stop-color="#2EC5E6" />
+        <stop stopColor="#29A0C6" />
+        <stop offset="1" stopColor="#2EC5E6" />
       </linearGradient>
       <linearGradient
         id="paint17_linear"
@@ -305,8 +305,8 @@ export default () => (
         y2="101.3"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#29A0C6" />
-        <stop offset="1" stop-color="#2EC5E6" />
+        <stop stopColor="#29A0C6" />
+        <stop offset="1" stopColor="#2EC5E6" />
       </linearGradient>
       <clipPath id="clip0">
         <path fill="#fff" transform="translate(142 32.9)" d="M0 0h1v1H0z" />
@@ -322,8 +322,8 @@ export default () => (
         gradientUnits="userSpaceOnUse"
         gradientTransform="translate(342.5 262.6) scale(.6425)"
       >
-        <stop stop-color="#29A0C6" />
-        <stop offset="1" stop-color="#110438" />
+        <stop stopColor="#29A0C6" />
+        <stop offset="1" stopColor="#110438" />
       </radialGradient>
     </defs>
   </svg>

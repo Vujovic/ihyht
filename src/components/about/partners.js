@@ -1,12 +1,11 @@
 import React from "react"
 import styled from "styled-components"
 import { useStaticQuery, graphql } from "gatsby"
-import ScrollContainer from "react-indiana-drag-scroll"
 import Img from "gatsby-image"
 
 export default () => {
   const data = useStaticQuery(graphql`
-    query GetPartners {
+    query GetAllPartners {
       allStrapiPartners {
         edges {
           node {
@@ -27,13 +26,13 @@ export default () => {
   return (
     <Partners>
       <h2>合作伙伴</h2>
-      <ScrollContainer hideScrollbars={false} className="cards">
+      <div className="cards">
         {data.allStrapiPartners.edges.map(card => (
           <div className="card" key={card.node.id}>
             <Img fixed={card.node.images.childImageSharp.fixed} />
           </div>
         ))}
-      </ScrollContainer>
+      </div>
     </Partners>
   )
 }
@@ -47,10 +46,12 @@ const Partners = styled.section`
   }
   .cards {
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     .card {
       box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
       height: 200px;
-      margin: 10px 20px;
+      margin: 10px;
       width: 200px;
     }
   }

@@ -1,4 +1,6 @@
 import React from "react"
+import ScrollAnimation from "react-animate-on-scroll"
+import "animate.css/animate.min.css"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
