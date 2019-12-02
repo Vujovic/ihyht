@@ -145,7 +145,7 @@ const Introduction = styled.section`
     max-width: 90%;
     .card {
       border-radius: 20px;
-      box-shadow: 0 0 16px rgba(0, 0, 0, 0.15);
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
       font-size: 24px;
       margin: 10px 20px;
       padding: 40px 60px;
