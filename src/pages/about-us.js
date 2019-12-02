@@ -6,17 +6,15 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 import About from "../components/about/about"
-import History from "../components/about/history"
 import Partners from "../components/about/partners"
 
 export default () => (
   <Layout>
-    <SEO title="About us" />
+    <SEO title="关于我们" />
     <TabSection>
       <Tabs>
         <TabList>
           <Tab>企业简介</Tab>
-          <Tab>History</Tab>
           <Tab>Team</Tab>
           <Tab>合作伙伴</Tab>
           <Tab>Contact Us</Tab>
@@ -25,9 +23,6 @@ export default () => (
 
         <TabPanel>
           <About />
-        </TabPanel>
-        <TabPanel>
-          <History />
         </TabPanel>
         <TabPanel>
           <h2>Team</h2>

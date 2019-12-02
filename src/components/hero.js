@@ -30,16 +30,25 @@ export default () => {
         />
       </div>
       <div className="text">
+        <h1>财税大数据资产管理与运营服务提供商</h1>
         <h2>
-          探索财税大数据奥妙，为政府决策、
-          <br /> 企业服务、金融风控提供数据服务和科技赋能
+          探索财税大数据奥妙，为政府决策、企业服务、金融风控提供数据服务和科技赋能
         </h2>
-        <h1>
-          财税大数据资产管理
-          <br />
-          与运营服务提供商
-        </h1>
-        <button>学到更多</button>
+        <a href="#introduction">
+          <svg
+            width="86"
+            height="45"
+            viewBox="0 0 86 45"
+            fill="#2E83E6"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fillRule="evenodd"
+              clipRule="evenodd"
+              d="M39.6546 43.7158C41.5564 45.4281 44.444 45.4281 46.3458 43.7158L84.2797 9.56138C86.3319 7.71367 86.4977 4.55219 84.6499 2.50001V2.50001C82.8022 0.447834 79.6408 0.28208 77.5886 2.12979L46.3457 30.2598C44.444 31.972 41.5564 31.972 39.6546 30.2598L8.41131 2.12975C6.35913 0.28205 3.19764 0.447823 1.34995 2.50001V2.50001C-0.497751 4.5522 -0.331981 7.71368 1.72021 9.56138L39.6546 43.7158Z"
+            />
+          </svg>
+        </a>
       </div>
     </Hero>
   )
@@ -78,35 +87,34 @@ const Hero = styled.section`
     h1 {
       animation: 1s forwards heroText;
       animation-delay: 0.2s;
-      font-size: 48px;
+      font-size: 58px;
       opacity: 0;
-      padding: 80px 0;
       text-align: center;
     }
     h2 {
       animation: 1s forwards heroText;
       opacity: 0;
-      font-size: 36px;
+      font-size: 22px;
+      padding: 40px 0 80px 0;
       text-align: center;
     }
-    button {
-      animation: 1s forwards heroText;
-      animation-delay: 0.4s;
+    a {
       background-color: #fff;
-      border: none;
-      border-radius: 50px;
-      box-shadow: 0 0 16px rgba(0, 0, 0, 0.25);
-      color: #3379e0;
-      cursor: pointer;
-      font-size: 24px;
-      margin: 0 auto;
-      opacity: 0;
-      padding: 10px 0;
-      transition: all 0.3s;
-      width: 250px;
-      :hover {
-        background-color: #3379e0;
-        color: #fff;
+      border-radius: 50%;
+      height: 40px;
+      width: 40px;
+      padding: 10px;
+      position: absolute;
+      bottom: 20px;
+      svg {
+        margin-top: 2px;
+        height: 40px;
+        width: 40px;
+        transition: all 0.3s;
+        :hover {
+          opacity: 0.8;
+          transform: translateY(3px);
+        }
       }
     }
   }

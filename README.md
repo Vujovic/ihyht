@@ -2,7 +2,7 @@ Todo
 
 [ ] - contact module responsive
 
-[ ] - finish home page
+[x] - finish home page
 
 [ ] - finish products page
 
@@ -10,6 +10,46 @@ Todo
 
 [ ] - finish services page
 
-[ ] - finish success cases page
+[x] - finish success cases page
 
 [ ] - finish about page
+
+[x] - finish news page
+
+[x] - finish footer page
+
+[ ] - add QR codes to footer
+
+[x] - update icons on hero (add details)
+
+[ ] - add success cases to gatsby-node
+
+[ ] - animate
+
+[ ] - product trees
+
+[ ] - provinces map
+
+[x] - success cases illustration
+
+[x] - solutions illustration
+
+[x] - products illustration
+
+[x] - letter icon for news
+
+[ ] - fix timeline align && add timeline to strapi
+
+[ ] - integrate forms
+
+[ ] - add gatsby background image
+
+[ ] - integrate search
+
+[ ] - add nprogress
+
+[ ] - add robots and sitemap
+
+[x] - add title and description
+
+[x] - update hero button on the index page

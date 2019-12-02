@@ -2,12 +2,14 @@ import React from "react"
 import { createGlobalStyle } from "styled-components"
 
 import Nav from "./nav"
+import Footer from "./footer"
 
 const Layout = ({ children }) => (
   <>
     <GlobalStyle />
     <Nav />
     <main>{children}</main>
+    <Footer />
   </>
 )
 

@@ -1,12 +1,17 @@
 import React from "react"
 import styled from "styled-components"
 
+import ScrollAnimation from "react-animate-on-scroll"
+import "animate.css/animate.min.css"
+
+import History from "./history"
+
 import Illustration from "../svg/about"
 
 export default () => (
   <About>
     <h2>企业简介</h2>
-    <div className="info">
+    <ScrollAnimation animateIn="fadeInUp" className="info" animateOnce>
       <div className="text">
         <p>
           北京华云慧通科技有限公司（以下简称：“华云慧通”）于2016年8月在北京注册成立，公司运营总部设立于北京，并已在广州、武汉、济南、杭州等地设立了分子公司，其中武汉为公司研发中心所在地。华云慧通现有员工100多人，并汇聚了大批的财税行业专家、大数据人工智能领域精英和政务领域资深商务人才。公司2019年营业收入将突破1亿元人民币。
@@ -19,7 +24,8 @@ export default () => (
         </p>
       </div>
       <Illustration />
-    </div>
+    </ScrollAnimation>
+    <History />
   </About>
 )
 
@@ -33,11 +39,12 @@ const About = styled.section`
   .info {
     display: flex;
     .text {
-      padding: 0 5%;
+      padding: 0 0 0 10%;
       width: 40%;
       text-align: justify;
       p {
         margin: 20px;
+        max-width: 500px;
       }
     }
     svg {
@@ -49,7 +56,8 @@ const About = styled.section`
     .info {
       flex-direction: column-reverse;
       .text {
-        width: 90%;
+        padding: 0;
+        width: 100%;
       }
     }
   }

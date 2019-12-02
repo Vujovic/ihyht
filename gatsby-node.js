@@ -1,7 +1,28 @@
-/**
- * Implement Gatsby's Node APIs in this file.
- *
- * See: https://www.gatsbyjs.org/docs/node-apis/
- */
+const path = require("path")
 
-// You can delete this file if you're not using it
+exports.createPages = ({ graphql, actions }) => {
+  return new Promise((resolve, reject) => {
+    graphql(`
+      {
+        allStrapiNews {
+          edges {
+            node {
+              link
+            }
+          }
+        }
+      }
+    `).then(results => {
+      results.data.allStrapiNews.edges.forEach(edge => {
+        actions.createPage({
+          path: edge.node.link,
+          component: path.resolve("./src/templates/newsArticle.js"),
+          context: {
+            link: edge.node.link,
+          },
+        })
+      })
+      resolve()
+    })
+  })
+}

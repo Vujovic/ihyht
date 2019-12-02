@@ -4,11 +4,12 @@ import { Link, useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 
 import Illustration from "./svg/readingNews"
+import NewsIcon from "./svg/newsIcon"
 
 export default () => {
   const data = useStaticQuery(graphql`
     query getNews {
-      allStrapiNews(limit: 3, sort: { order: DESC, fields: [date] }) {
+      allStrapiNews(limit: 4, sort: { order: DESC, fields: [date] }) {
         edges {
           node {
             id
@@ -38,17 +39,13 @@ export default () => {
         <div className="news">
           {data.allStrapiNews.edges.map(edge => (
             <div className="post" key={edge.node.id}>
-              <div className="description">
-                <p>{edge.node.publisher}</p>
-                <h3>{edge.node.title}</h3>
-                <p>{edge.node.date}</p>
-                <a
-                  href={edge.node.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Read more
-                </a>
+              <div className="text-block">
+                <NewsIcon />
+                <div className="description">
+                  <h3>{edge.node.title}</h3>
+                  <p>{edge.node.date}</p>
+                  <Link to={edge.node.link}>Read more</Link>
+                </div>
               </div>
               <Img
                 fixed={edge.node.thumbnail.childImageSharp.fixed}
@@ -98,6 +95,17 @@ const NewsCenter = styled.section`
         a {
           :hover {
             opacity: 0.7;
+          }
+        }
+        .text-block {
+          display: flex;
+          align-items: center;
+          svg {
+            border: none;
+            margin-right: 20px;
+            margin-left: 0;
+            padding: 0;
+            width: 50px;
           }
         }
       }

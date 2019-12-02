@@ -27,18 +27,13 @@ export default () => {
 
   return (
     <Layout>
-      <SEO title="services" />
+      <SEO title="服务支持" />
       <Services>
         <header className="standard">
           <div className="text">
             <h1>服务支持</h1>
             <p>
-              Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum
-              dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit
-              amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem
-              ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor
-              sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
-              Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet.
+              全方位提供专业咨询规划、业务上云、数据治理、平台建设和智能应用服务，为客户数据赋能和决策提供支持
             </p>
           </div>
           <div className="image">
@@ -93,7 +88,7 @@ const Services = styled.section`
   h1,
   h2 {
     color: #434343;
-    font-size: 48px;
+    font-size: 36px;
     text-align: center;
   }
   p {
@@ -120,7 +115,7 @@ const Services = styled.section`
     .text {
       p {
         color: #555;
-        margin: 0 auto;
+        margin: 25px auto 0 auto;
         max-width: 700px;
         text-align: center;
       }
@@ -129,7 +124,7 @@ const Services = styled.section`
   .cards {
     display: flex;
     justify-content: space-around;
-    margin-top: 50px;
+    margin-top: 75px;
   }
   @media screen and (max-width: 1280px) {
     .cards {

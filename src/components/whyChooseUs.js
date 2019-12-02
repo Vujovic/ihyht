@@ -15,16 +15,16 @@ export default () => (
             <Check /> 卓越的市场开拓能力
           </li>
           <li>
-            <Check /> 卓越的市场开拓能力
+            <Check /> 独特数据共享机制
           </li>
           <li>
-            <Check /> 卓越的市场开拓能力
+            <Check /> 深厚的业务、技术积累
           </li>
           <li>
-            <Check /> 卓越的市场开拓能力
+            <Check /> 科学的股权治理
           </li>
           <li>
-            <Check /> 卓越的市场开拓能力
+            <Check /> 超强的战略生态合作体系
           </li>
         </ul>
       </div>
