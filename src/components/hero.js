@@ -101,17 +101,19 @@ const Hero = styled.section`
     a {
       background-color: #fff;
       border-radius: 50%;
-      height: 40px;
-      width: 40px;
+      height: 20px;
+      width: 20px;
       padding: 10px;
       position: absolute;
       bottom: 20px;
       svg {
+        animation: 1s chevron infinite;
         margin-top: 2px;
-        height: 40px;
-        width: 40px;
+        height: 20px;
+        width: 20px;
         transition: all 0.3s;
         :hover {
+          animation: none;
           opacity: 0.8;
           transform: translateY(3px);
         }
@@ -159,6 +161,15 @@ const Hero = styled.section`
     }
     100% {
       opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes chevron {
+    50% {
+      transform: translateY(3px);
+    }
+    100% {
       transform: translateY(0);
     }
   }

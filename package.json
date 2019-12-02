@@ -1,7 +1,7 @@
 {
-  "name": "北京华云慧通科技有限公司",
+  "name": "ihyht",
   "private": true,
-  "description": "探索财税大数据奥妙，为政府决策、企业服务、金融风控提供数据服务和科技赋能",
+  "description": "website for ihyht",
   "version": "0.1.0",
   "author": "njegos.dev <hello@njegos.dev>",
   "dependencies": {

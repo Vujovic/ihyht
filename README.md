@@ -46,7 +46,7 @@ Todo
 
 [ ] - integrate search
 
-[ ] - add nprogress
+[x] - add nprogress
 
 [ ] - add robots and sitemap
 
