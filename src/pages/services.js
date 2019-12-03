@@ -6,11 +6,13 @@ import Img from "gatsby-image"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import ServicesCard from "../components/servicesCard"
+import { ServiceFeaturesCards } from "../templates/serviceFeaturesCard"
 
 import Services3 from "../components/svg/services3"
 import Support from "../components/svg/support"
 import Delivery from "../components/svg/delivery"
 import Management from "../components/svg/management"
+import Check from "../components/svg/check"
 
 export default () => {
   const data = useStaticQuery(graphql`
@@ -43,6 +45,90 @@ export default () => {
             />
           </div>
         </header>
+        <ServiceFeaturesCards>
+          <h2>咨询规划</h2>
+          <div className="cards">
+            <div className="card">
+              <h3>上云咨询服务</h3>
+              <ul>
+                <li>
+                  <Check /> 云计算基础平台
+                </li>
+                <li>
+                  <Check /> 大数据基础平台
+                </li>
+                <li>
+                  <Check /> 业务上云咨询
+                </li>
+                <li>
+                  <Check /> 数据上云咨询
+                </li>
+              </ul>
+            </div>
+            <div className="card">
+              <h3>数据治理规划</h3>
+              <ul>
+                <li>
+                  <Check /> 数据资产地图
+                </li>
+                <li>
+                  <Check /> 数据资源目录
+                </li>
+                <li>
+                  <Check /> 统一数据标准
+                </li>
+                <li>
+                  <Check /> 自助化数据智能
+                </li>
+              </ul>
+            </div>
+            <div className="card">
+              <h3>智能算法咨询</h3>
+              <ul>
+                <li>
+                  <Check /> 基础算法
+                </li>
+                <li>
+                  <Check /> 智能风控
+                </li>
+                <li>
+                  <Check /> 智能征管
+                </li>
+                <li>
+                  <Check /> 智能纳服
+                </li>
+              </ul>
+            </div>
+            <div className="card">
+              <h3>创新应用规划</h3>
+              <ul>
+                <li>
+                  <Check /> 12类创新应用
+                </li>
+                <li>
+                  <Check /> 实名办税
+                </li>
+                <li>
+                  <Check /> 综合治税
+                </li>
+                <li>
+                  <Check /> 动态信用
+                </li>
+              </ul>
+            </div>
+          </div>
+        </ServiceFeaturesCards>
+        <div className="standard serviceStandards">
+          <div className="text">
+            <h2>服务标准</h2>
+            <p>
+              华云慧通严格遵循由信息技术服务标准工作组组织研究制定ITSS（信息技术服务标准），围绕IT服务的核心要素（PPTR）：人员、过程、技术、资源和生命周期（PIOIS）：规划设计、部署实施、服务运营、持续改进、监督管理，充分体现质量管理原理和过程改进方法的精髓，确保实现标准化的IT服务、可信赖的IT服务、安全的IT服务。
+            </p>
+          </div>
+          <div className="image">
+            <Services3 />
+          </div>
+        </div>
         <div className="serviceSystem">
           <div className="text">
             <h2>服务支持体系</h2>
@@ -66,17 +152,6 @@ export default () => {
               title="服务管理体系"
               description="从公司资质，技术能力，项目经验三个方面全力打造服务“金刚钻”，提升服务管理水平。"
             />
-          </div>
-        </div>
-        <div className="standard serviceStandards">
-          <div className="text">
-            <h2>服务标准</h2>
-            <p>
-              华云慧通严格遵循由信息技术服务标准工作组组织研究制定ITSS（信息技术服务标准），围绕IT服务的核心要素（PPTR）：人员、过程、技术、资源和生命周期（PIOIS）：规划设计、部署实施、服务运营、持续改进、监督管理，充分体现质量管理原理和过程改进方法的精髓，确保实现标准化的IT服务、可信赖的IT服务、安全的IT服务。
-            </p>
-          </div>
-          <div className="image">
-            <Services3 />
           </div>
         </div>
       </Services>

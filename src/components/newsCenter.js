@@ -91,11 +91,14 @@ const NewsCenter = styled.section`
         display: flex;
         justify-content: space-between;
         margin: 20px 0;
-        padding: 0 40px;
+        padding: 0 120px;
         a {
           :hover {
             opacity: 0.7;
           }
+        }
+        img {
+          border-radius: 50%;
         }
         .text-block {
           display: flex;
@@ -109,6 +112,11 @@ const NewsCenter = styled.section`
           }
         }
       }
+    }
+  }
+  @media screen and (max-width: 1400px) {
+    .content > .news > .post {
+      padding: 0 40px;
     }
   }
   @media screen and (max-width: 1024px) {

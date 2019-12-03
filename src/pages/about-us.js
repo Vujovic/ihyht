@@ -7,6 +7,7 @@ import SEO from "../components/seo"
 
 import About from "../components/about/about"
 import Partners from "../components/about/partners"
+import Contact from "../components/about/contactUs"
 
 export default () => (
   <Layout>
@@ -17,7 +18,7 @@ export default () => (
           <Tab>企业简介</Tab>
           <Tab>Team</Tab>
           <Tab>合作伙伴</Tab>
-          <Tab>Contact Us</Tab>
+          <Tab>联系我们</Tab>
           <Tab>Careers</Tab>
         </TabList>
 
@@ -31,7 +32,7 @@ export default () => (
           <Partners />
         </TabPanel>
         <TabPanel>
-          <h2>Contact Us</h2>
+          <Contact />
         </TabPanel>
         <TabPanel>
           <h2>Careers</h2>
