@@ -4,6 +4,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 
 import AddressIcon from "./svg/address"
+import Illustration from "./svg/contact"
 
 export default () => {
   const data = useStaticQuery(graphql`
@@ -69,6 +70,57 @@ export default () => {
       </Branches>
       <Form>
         <h2>联系我们</h2>
+        <div className="content">
+          <Illustration />
+          <form
+            name="contact"
+            action="https://formsubmit.io/send/hello@njegos.dev"
+            method="POST"
+          >
+            <input
+              name="_redirect"
+              type="hidden"
+              id="name"
+              value="https://njegos.dev"
+            ></input>
+            <label>
+              您的姓名 :
+              <input type="text" id="name" name="name" required />
+            </label>
+            <label>
+              联系地址 :
+              <input type="text" id="address" name="address" required />
+            </label>
+            <label>
+              联系方式
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                pattern="[0-9]{11}"
+                required
+              />
+            </label>
+            <label>
+              电子邮件
+              <input type="email" name="email" id="email" required />
+            </label>
+            <label>
+              项目类型
+              <input type="text" name="subject" id="subject" required />
+            </label>
+            <label>
+              留言信息
+              <textarea name="message" id="message" rows="3" required />
+            </label>
+            <input
+              name="_formsubmit_id"
+              type="text"
+              style={{ display: "none" }}
+            />
+            <input type="submit" id="submit" />
+          </form>
+        </div>
       </Form>
     </>
   )
@@ -108,5 +160,59 @@ const Form = styled.section`
     font-size: 36px;
     margin-bottom: 75px;
     text-align: center;
+  }
+
+  .content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    svg {
+      width: 30%;
+    }
+  }
+
+  form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    label {
+      margin: 25px 0;
+    }
+    input,
+    textarea {
+      background-color: #eee;
+      border: none;
+      border-radius: 10px;
+      box-sizing: border-box;
+      display: block;
+      margin: 0 auto;
+      font-family: inherit;
+      font-size: inherit;
+      padding: 15px 40px;
+      width: 550px;
+    }
+    #submit {
+      align-self: flex-start;
+      background-color: #2e83e6;
+      border-radius: 50px;
+      color: #fff;
+      cursor: pointer;
+      :hover {
+        background-color: rgba(46, 131, 230, 0.9);
+      }
+    }
+  }
+  @media screen and (max-width: 1280px) {
+    form {
+    }
+  }
+  @media screen and (max-width: 768px) {
+    form {
+      input,
+      textarea,
+      #submit {
+        width: 90vw;
+      }
+    }
   }
 `

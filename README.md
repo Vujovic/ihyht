@@ -53,3 +53,5 @@ Todo
 [x] - add title and description
 
 [x] - update hero button on the index page
+
+[ ] - form redirect to homepage
