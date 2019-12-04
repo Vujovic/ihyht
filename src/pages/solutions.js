@@ -1,9 +1,16 @@
 import React from "react"
 import styled from "styled-components"
+import { Tab, Tabs, TabList, TabPanel } from "react-tabs"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Guangdong from "../components/solutions/guangdong"
+import Shandong from "../components/solutions/shandong"
+import Jilin from "../components/solutions/jilin"
+import Zhejiang from "../components/solutions/zhejiang"
+import Einvoice from "../components/solutions/einvoice"
 
+import { TabSection } from "./products"
 import Illustration from "../components/svg/solutionsMain"
 
 export default () => (
@@ -18,6 +25,33 @@ export default () => (
           打造一站式财税大数据智能解决方案
         </p>
       </div>
+      <TabSection>
+        <Tabs>
+          <TabList>
+            <Tab>广东省国家税务局</Tab>
+            <Tab>山东省国家税务局</Tab>
+            <Tab>吉林省国家税务局</Tab>
+            <Tab>浙江省国家税务局</Tab>
+            <Tab>电子发票服务系统</Tab>
+          </TabList>
+
+          <TabPanel>
+            <Guangdong />
+          </TabPanel>
+          <TabPanel>
+            <Shandong />
+          </TabPanel>
+          <TabPanel>
+            <Jilin />
+          </TabPanel>
+          <TabPanel>
+            <Zhejiang />
+          </TabPanel>
+          <TabPanel>
+            <Einvoice />
+          </TabPanel>
+        </Tabs>
+      </TabSection>
     </Solutions>
   </Layout>
 )

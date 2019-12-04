@@ -4,7 +4,7 @@ import { ProductsSm } from "../../templates/productsSm"
 import FeatureCard from "../../templates/featureCard"
 
 import Illustration from "./svg/3"
-
+// Icons
 import WebCrawler from "./svg/webCrawler"
 import RealTimeData from "./svg/realTimeData"
 import Computing from "./svg/computing"

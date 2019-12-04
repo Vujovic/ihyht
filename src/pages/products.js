@@ -68,7 +68,7 @@ const Hero = styled.section`
   }
 `
 
-const TabSection = styled.section`
+export const TabSection = styled.section`
   padding-top: 150px;
   .react-tabs {
   }
