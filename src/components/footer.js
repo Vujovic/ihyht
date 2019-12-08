@@ -6,31 +6,22 @@ import Logo from "./svg/logo"
 
 export default () => (
   <Footer>
-    <h1>内容</h1>
-    <ul>
-      <Link to="/">
-        <li>主页</li>
-      </Link>
-      <Link to="/products">
-        <li>产品中心</li>
-      </Link>
-      <Link to="/solutions">
-        <li>解决方案</li>
-      </Link>
-      <Link to="/services">
-        <li>服务支持</li>
-      </Link>
-      <Link to="/success-cases">
-        <li>成功案例</li>
-      </Link>
-      <Link to="/about-us">
-        <li>关于我们</li>
-      </Link>
-    </ul>
+    <div className="company">
+      <div className="certificates">
+        <p>Certificates</p>
+      </div>
+      <div className="contact-info">
+        <p>hyhtoffw@ihyht.com</p>
+        <p>+86 188 1111 1111</p>
+      </div>
+      <div className="qr-codes">
+        <p>Qr Codes</p>
+      </div>
+    </div>
     <div className="copyright">
       <p>
-        Company 北京华云慧通科技有限公司 © All Rights Reserved 2019
-        京ICP备17004022 | 京公网安备 11010502033779
+        Copyright © 2016 - {new Date().getFullYear()} 北京华云慧通科技有限公司
+        All Rights Reserved | 京ICP备17004022 | 京公网安备 11010502033779
       </p>
       <Link to="/">
         <Logo />
@@ -44,20 +35,14 @@ const Footer = styled.footer`
   color: #fff;
   margin-top: 75px;
   padding: 75px 0;
-  h1 {
-    margin-left: 250px;
-  }
-  ul {
+  .company {
     display: flex;
+    align-items: center;
     justify-content: space-around;
-    list-style-type: none;
-    margin-top: 75px;
-    padding: 0 200px;
-    a {
-      color: #fff;
-      font-size: 18px;
-      :hover {
-        opacity: 0.7;
+    .contact-info {
+      p {
+        margin: 10px 0;
+        text-align: center;
       }
     }
   }

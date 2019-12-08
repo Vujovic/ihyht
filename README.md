@@ -55,3 +55,11 @@ Todo
 [x] - update hero button on the index page
 
 [ ] - form redirect to homepage
+
+[ ] - change email for contact
+
+[ ] - background for main page headers
+
+[x] - add Date js to footer year
+
+[ ] - edit contact number

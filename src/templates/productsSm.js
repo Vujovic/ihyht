@@ -34,4 +34,23 @@ export const ProductsSm = styled.section`
       justify-content: space-evenly;
     }
   }
+  @media screen and (max-width: 1024px) {
+    .main {
+      flex-direction: column-reverse;
+      svg {
+        width: 60%;
+      }
+      .text {
+        width: 70%;
+      }
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .main {
+      svg {
+        margin-bottom: 30px;
+        width: 80%;
+      }
+    }
+  }
 `

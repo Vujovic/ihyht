@@ -27,7 +27,7 @@ export default () => {
   return (
     <Partners>
       <h2>合作伙伴</h2>
-      <ScrollContainer hideScrollbars={false} className="cards">
+      <ScrollContainer className="cards">
         {data.allStrapiPartners.edges.map(card => (
           <div className="card" key={card.node.id}>
             <Img fixed={card.node.images.childImageSharp.fixed} />

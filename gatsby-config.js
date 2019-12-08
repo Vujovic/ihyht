@@ -22,6 +22,7 @@ module.exports = {
           "news",
           "partners",
           "successcases",
+          "careers",
         ],
         queryLimit: 1000,
       },

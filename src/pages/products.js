@@ -4,6 +4,8 @@ import { Tab, Tabs, TabList, TabPanel } from "react-tabs"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import SmartApplication from "../components/products/smartApplication"
+import Insight from "../components/products/insight"
 import DataCollection from "../components/products/dataCollection"
 import DataGovernance from "../components/products/dataGovernance"
 import DataCenter from "../components/products/dataCenter"
@@ -31,10 +33,10 @@ export default () => (
         </TabList>
 
         <TabPanel>
-          <h2>1</h2>
+          <SmartApplication />
         </TabPanel>
         <TabPanel>
-          <h2>2</h2>
+          <Insight />
         </TabPanel>
         <TabPanel>
           <DataCollection />
@@ -70,8 +72,6 @@ const Hero = styled.section`
 
 export const TabSection = styled.section`
   padding-top: 150px;
-  .react-tabs {
-  }
   .react-tabs__tab-list {
     border: none;
     cursor: pointer;

@@ -3,7 +3,7 @@ import React from "react"
 import { ProductsSm } from "../../templates/productsSm"
 import FeatureCard from "../../templates/featureCard"
 
-import Illustration from "./svg/3"
+import Illustration from "./svg/6"
 // Icons
 import WebCrawler from "./svg/webCrawler"
 import RealTimeData from "./svg/realTimeData"

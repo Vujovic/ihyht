@@ -41,11 +41,11 @@ const GlobalStyle = createGlobalStyle`
   body, * {
     ::-webkit-scrollbar {
       height: 3px;
-      width: 3px;
+      width: 6px;
     }
 
     ::-webkit-scrollbar-thumb {
-      background-color: #aaa;
+      background-color: #2E83E6;
     }
   }
 
