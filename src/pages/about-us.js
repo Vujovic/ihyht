@@ -17,7 +17,6 @@ export default () => (
       <Tabs>
         <TabList>
           <Tab>企业简介</Tab>
-          <Tab>Team</Tab>
           <Tab>合作伙伴</Tab>
           <Tab>联系我们</Tab>
           <Tab>职位信息</Tab>
@@ -25,9 +24,6 @@ export default () => (
 
         <TabPanel>
           <About />
-        </TabPanel>
-        <TabPanel>
-          <h2>Team</h2>
         </TabPanel>
         <TabPanel>
           <Partners />
