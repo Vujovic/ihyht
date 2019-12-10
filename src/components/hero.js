@@ -2,6 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
+import scrollTo from "gatsby-plugin-smoothscroll"
 
 import ParticleBg from "./particleBg"
 import bgImage from "../images/earthBG.jpg"
@@ -34,21 +35,23 @@ export default () => {
         <h2>
           探索财税大数据奥妙，为政府决策、企业服务、金融风控提供数据服务和科技赋能
         </h2>
-        <a href="#introduction">
-          <svg
-            width="86"
-            height="45"
-            viewBox="0 0 86 45"
-            fill="#2E83E6"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fillRule="evenodd"
-              clipRule="evenodd"
-              d="M39.6546 43.7158C41.5564 45.4281 44.444 45.4281 46.3458 43.7158L84.2797 9.56138C86.3319 7.71367 86.4977 4.55219 84.6499 2.50001V2.50001C82.8022 0.447834 79.6408 0.28208 77.5886 2.12979L46.3457 30.2598C44.444 31.972 41.5564 31.972 39.6546 30.2598L8.41131 2.12975C6.35913 0.28205 3.19764 0.447823 1.34995 2.50001V2.50001C-0.497751 4.5522 -0.331981 7.71368 1.72021 9.56138L39.6546 43.7158Z"
-            />
-          </svg>
-        </a>
+        <div className="button">
+          <button onClick={() => scrollTo("#introduction")}>
+            <svg
+              width="86"
+              height="45"
+              viewBox="0 0 86 45"
+              fill="#2E83E6"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fillRule="evenodd"
+                clipRule="evenodd"
+                d="M39.6546 43.7158C41.5564 45.4281 44.444 45.4281 46.3458 43.7158L84.2797 9.56138C86.3319 7.71367 86.4977 4.55219 84.6499 2.50001V2.50001C82.8022 0.447834 79.6408 0.28208 77.5886 2.12979L46.3457 30.2598C44.444 31.972 41.5564 31.972 39.6546 30.2598L8.41131 2.12975C6.35913 0.28205 3.19764 0.447823 1.34995 2.50001V2.50001C-0.497751 4.5522 -0.331981 7.71368 1.72021 9.56138L39.6546 43.7158Z"
+              />
+            </svg>
+          </button>
+        </div>
       </div>
     </Hero>
   )
@@ -98,7 +101,7 @@ const Hero = styled.section`
       padding: 40px 0 80px 0;
       text-align: center;
     }
-    a {
+    .button {
       background-color: #fff;
       border-radius: 50%;
       height: 20px;
@@ -106,6 +109,11 @@ const Hero = styled.section`
       padding: 10px;
       position: absolute;
       bottom: 20px;
+      button {
+        background: none;
+        border: none;
+        cursor: pointer;
+      }
       svg {
         animation: 1s chevron infinite;
         margin-top: 2px;

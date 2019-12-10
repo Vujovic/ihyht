@@ -2,6 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import { Link } from "gatsby"
 
+import ContactQR from "./contactQR"
 import Logo from "./svg/logo"
 
 export default () => (
@@ -11,12 +12,11 @@ export default () => (
         <p>Certificates</p>
       </div>
       <div className="contact-info">
+        <h3>联系方式</h3>
         <p>hyhtoffw@ihyht.com</p>
         <p>+86 188 1111 1111</p>
       </div>
-      <div className="qr-codes">
-        <p>Qr Codes</p>
-      </div>
+      <ContactQR />
     </div>
     <div className="copyright">
       <p>
@@ -34,15 +34,25 @@ const Footer = styled.footer`
   background-image: linear-gradient(to top right, #2e83e6, #259ec3);
   color: #fff;
   margin-top: 75px;
-  padding: 75px 0;
+  padding: 25px 0;
   .company {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    > * {
+      width: 33.3%;
+    }
     .contact-info {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      text-align: center;
+      h3 {
+        font-size: 36px;
+        margin-bottom: 25px;
+      }
       p {
         margin: 10px 0;
-        text-align: center;
       }
     }
   }

@@ -2,6 +2,8 @@ import React from "react"
 import styled from "styled-components"
 import { Link, useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
+import ScrollAnimation from "react-animate-on-scroll"
+import "animate.css/animate.min.css"
 
 import Illustration from "./svg/readingNews"
 import NewsIcon from "./svg/newsIcon"
@@ -32,25 +34,36 @@ export default () => {
 
   return (
     <NewsCenter>
-      <h2>新闻中心</h2>
-      <Link to="/news">查看全部</Link>
+      <ScrollAnimation animateIn="fadeInUp" animateOnce>
+        <h2 className="title">新闻中心</h2>
+        <Link to="/news">查看全部</Link>
+      </ScrollAnimation>
       <div className="content">
-        <Illustration />
+        <ScrollAnimation animateIn="fadeInLeft" animateOnce>
+          <Illustration />
+        </ScrollAnimation>
         <div className="news">
           {data.allStrapiNews.edges.map(edge => (
             <div className="post" key={edge.node.id}>
-              <div className="text-block">
-                <NewsIcon />
-                <div className="description">
-                  <h3>{edge.node.title}</h3>
-                  <p>{edge.node.date}</p>
-                  <Link to={edge.node.link}>Read more</Link>
+              <ScrollAnimation
+                animateIn="fadeInRight"
+                animateOnce
+                delay={edge.node.id * 50}
+              >
+                <div className="text-block">
+                  <NewsIcon />
+                  <div className="description">
+                    <h3>{edge.node.title}</h3>
+                    <p>{edge.node.date}</p>
+                    <Link to={edge.node.link}>Read more</Link>
+                  </div>
                 </div>
-              </div>
-              <Img
-                fixed={edge.node.thumbnail.childImageSharp.fixed}
-                draggable={false}
-              />
+
+                <Img
+                  fixed={edge.node.thumbnail.childImageSharp.fixed}
+                  draggable={false}
+                />
+              </ScrollAnimation>
             </div>
           ))}
         </div>
@@ -62,7 +75,7 @@ export default () => {
 const NewsCenter = styled.section`
   padding: 75px 0;
   text-align: center;
-  > h2 {
+  .title {
     font-size: 36px;
   }
   > a {
@@ -79,7 +92,7 @@ const NewsCenter = styled.section`
     justify-content: space-around;
     margin-top: 75px;
     text-align: justify;
-    svg {
+    > .animated {
       border-right: 1px solid #ccc;
       margin-left: 5%;
       padding-right: 10%;
@@ -88,27 +101,29 @@ const NewsCenter = styled.section`
     .news {
       width: 50%;
       .post {
-        display: flex;
-        justify-content: space-between;
-        margin: 20px 0;
-        padding: 0 120px;
-        a {
-          :hover {
-            opacity: 0.7;
-          }
-        }
-        img {
-          border-radius: 50%;
-        }
-        .text-block {
+        > .animated {
           display: flex;
-          align-items: center;
-          svg {
-            border: none;
-            margin-right: 20px;
-            margin-left: 0;
-            padding: 0;
-            width: 50px;
+          justify-content: space-between;
+          margin: 20px 0;
+          padding: 0 120px;
+          a {
+            :hover {
+              opacity: 0.7;
+            }
+          }
+          img {
+            border-radius: 50%;
+          }
+          .text-block {
+            display: flex;
+            align-items: center;
+            svg {
+              border: none;
+              margin-right: 20px;
+              margin-left: 0;
+              padding: 0;
+              width: 50px;
+            }
           }
         }
       }

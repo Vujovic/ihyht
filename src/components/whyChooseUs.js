@@ -1,31 +1,47 @@
 import React from "react"
 import styled from "styled-components"
+import ScrollAnimation from "react-animate-on-scroll"
+import "animate.css/animate.min.css"
 
 import ChooseUsSvg from "../components/svg/chooseUsSvg"
 import Check from "../components/svg/check"
 
 export default () => (
   <WhyChooseUs>
-    <h2>为什么选择华云慧通</h2>
+    <ScrollAnimation animateIn="fadeInUp" animateOnce>
+      <h2 className="title">为什么选择华云慧通</h2>
+    </ScrollAnimation>
     <div className="section-content">
-      <ChooseUsSvg />
+      <ScrollAnimation animateIn="fadeInLeft" animateOnce>
+        <ChooseUsSvg />
+      </ScrollAnimation>
       <div className="reasons">
         <ul>
-          <li>
-            <Check /> 卓越的市场开拓能力
-          </li>
-          <li>
-            <Check /> 独特数据共享机制
-          </li>
-          <li>
-            <Check /> 深厚的业务、技术积累
-          </li>
-          <li>
-            <Check /> 科学的股权治理
-          </li>
-          <li>
-            <Check /> 超强的战略生态合作体系
-          </li>
+          <ScrollAnimation animateIn="fadeInRight" animateOnce>
+            <li>
+              <Check /> 卓越的市场开拓能力
+            </li>
+          </ScrollAnimation>
+          <ScrollAnimation animateIn="fadeInRight" animateOnce delay={50}>
+            <li>
+              <Check /> 独特数据共享机制
+            </li>
+          </ScrollAnimation>
+          <ScrollAnimation animateIn="fadeInRight" animateOnce delay={100}>
+            <li>
+              <Check /> 深厚的业务、技术积累
+            </li>
+          </ScrollAnimation>
+          <ScrollAnimation animateIn="fadeInRight" animateOnce delay={150}>
+            <li>
+              <Check /> 科学的股权治理
+            </li>
+          </ScrollAnimation>
+          <ScrollAnimation animateIn="fadeInRight" animateOnce delay={200}>
+            <li>
+              <Check /> 超强的战略生态合作体系
+            </li>
+          </ScrollAnimation>
         </ul>
       </div>
     </div>
@@ -35,7 +51,7 @@ export default () => (
 const WhyChooseUs = styled.section`
   padding: 75px 0;
   text-align: center;
-  > h2 {
+  .title {
     font-size: 36px;
     margin-bottom: 75px;
   }

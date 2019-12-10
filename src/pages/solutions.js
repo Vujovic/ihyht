@@ -17,12 +17,14 @@ export default () => (
     <SEO title="解决方案" />
     <Solutions>
       <div className="hero">
+        <div className="text">
+          <h1>解决方案</h1>
+          <p>
+            依托云计算、大数据技术，建设一个“横向到边、纵向到底”的水平融合业务系统,
+            打造一站式财税大数据智能解决方案
+          </p>
+        </div>
         <Illustration />
-        <h1>解决方案</h1>
-        <p>
-          依托云计算、大数据技术，建设一个“横向到边、纵向到底”的水平融合业务系统,
-          打造一站式财税大数据智能解决方案
-        </p>
       </div>
       <TabSection>
         <Tabs>
@@ -158,17 +160,23 @@ export default () => (
 
 const Solutions = styled.section`
   .hero {
+    align-items: center;
+    background-color: #eee;
+    display: flex;
+    justify-content: space-around;
     padding-top: 150px;
-    text-align: center;
     svg {
       margin-bottom: 75px;
-      max-height: 550px;
+      max-width: 800px;
+      width: 40%;
     }
     h1 {
       font-size: 36px;
+      text-align: center;
     }
     p {
       margin-top: 25px;
+      max-width: 500px;
     }
   }
   .react-tabs {
@@ -221,6 +229,18 @@ const Solutions = styled.section`
     .hero {
       svg {
         max-height: 350px;
+      }
+    }
+  }
+  @media screen and (max-width: 1024px) {
+    .hero {
+      flex-direction: column-reverse;
+      p {
+        margin: 25px;
+      }
+      svg {
+        margin-bottom: 30px;
+        width: 75%;
       }
     }
   }

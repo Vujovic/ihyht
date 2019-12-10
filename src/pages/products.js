@@ -17,9 +17,11 @@ export default () => (
   <Layout>
     <SEO title="产品中心" />
     <Hero>
+      <div className="text">
+        <h1>产品中心</h1>
+        <p>构建面向政府、大型企业和金融科技三维一体的财税大数据产品体系</p>
+      </div>
       <Illustration />
-      <h1>产品中心</h1>
-      <p>构建面向政府、大型企业和金融科技三维一体的财税大数据产品体系</p>
     </Hero>
     <TabSection>
       <Tabs>
@@ -56,17 +58,33 @@ export default () => (
 )
 
 const Hero = styled.section`
+  align-items: center;
+  background-color: #eee;
+  display: flex;
+  justify-content: space-around;
   padding-top: 150px;
-  text-align: center;
   svg {
     margin-bottom: 75px;
     max-width: 800px;
+    width: 40%;
   }
   h1 {
     font-size: 36px;
+    text-align: center;
   }
   p {
     margin-top: 25px;
+    max-width: 500px;
+  }
+  @media screen and (max-width: 1024px) {
+    flex-direction: column-reverse;
+    p {
+      margin: 25px;
+    }
+    svg {
+      margin-bottom: 30px;
+      width: 75%;
+    }
   }
 `
 

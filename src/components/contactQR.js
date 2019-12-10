@@ -46,9 +46,8 @@ export default () => {
 
 const ContactQR = styled.div`
   display: flex;
-
   .code {
-    margin-top: 60px;
+    margin-top: 30px;
     min-width: 140px;
     padding: 0 20px;
     p {

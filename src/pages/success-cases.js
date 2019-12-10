@@ -36,9 +36,11 @@ export default () => {
       <SEO title="成功案例" />
       <SuccessCases>
         <div className="hero">
+          <div className="text">
+            <h1>成功案例</h1>
+            <p>数字经济下领先财税大数据资产管理和运营服务提供商成功故事</p>
+          </div>
           <SuccessCaseMain />
-          <h1>成功案例</h1>
-          <p>数字经济下领先财税大数据资产管理和运营服务提供商成功故事</p>
         </div>
         <div className="cards">
           {data.allStrapiSuccesscases.edges.map(edge => (
@@ -62,17 +64,23 @@ export default () => {
 
 const SuccessCases = styled.section`
   .hero {
+    align-items: center;
+    background-color: #eee;
+    display: flex;
+    justify-content: space-around;
     padding-top: 150px;
-    text-align: center;
     svg {
       margin-bottom: 75px;
-      max-height: 550px;
+      max-width: 800px;
+      width: 40%;
     }
     h1 {
       font-size: 36px;
+      text-align: center;
     }
     p {
       margin-top: 25px;
+      max-width: 500px;
     }
   }
 
@@ -87,6 +95,7 @@ const SuccessCases = styled.section`
       flex-direction: column;
       align-items: center;
       justify-content: space-between;
+      min-width: 33%;
       padding: 35px 20px;
       text-align: center;
       > * {
@@ -98,6 +107,7 @@ const SuccessCases = styled.section`
       p {
         margin-bottom: 30px;
         max-width: 500px;
+        text-align: justify;
       }
       a {
         background-color: #3379e0;
@@ -106,6 +116,37 @@ const SuccessCases = styled.section`
         padding: 10px 100px;
         :hover {
           background-color: #174f90;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    .hero {
+      flex-direction: column-reverse;
+      p {
+        margin: 25px;
+      }
+      svg {
+        margin-bottom: 30px;
+        width: 75%;
+      }
+    }
+
+    .cards {
+      .card {
+        margin: 25px;
+        padding: 0;
+        width: 85%;
+        .gatsby-image-wrapper {
+          margin: 0 !important;
+          width: 100% !important;
+        }
+        p {
+          padding: 0 20px;
+        }
+        a {
+          padding: 10px 30px;
         }
       }
     }

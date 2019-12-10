@@ -3,6 +3,8 @@ import styled from "styled-components"
 import { useStaticQuery, graphql } from "gatsby"
 import ScrollContainer from "react-indiana-drag-scroll"
 import Img from "gatsby-image"
+import ScrollAnimation from "react-animate-on-scroll"
+import "animate.css/animate.min.css"
 
 export default () => {
   const data = useStaticQuery(graphql`
@@ -25,16 +27,18 @@ export default () => {
     }
   `)
   return (
-    <Partners>
-      <h2>合作伙伴</h2>
-      <ScrollContainer className="cards">
-        {data.allStrapiPartners.edges.map(card => (
-          <div className="card" key={card.node.id}>
-            <Img fixed={card.node.images.childImageSharp.fixed} />
-          </div>
-        ))}
-      </ScrollContainer>
-    </Partners>
+    <ScrollAnimation animateIn="fadeInUp" animateOnce>
+      <Partners>
+        <h2>合作伙伴</h2>
+        <ScrollContainer className="cards">
+          {data.allStrapiPartners.edges.map(card => (
+            <div className="card" key={card.node.id}>
+              <Img fixed={card.node.images.childImageSharp.fixed} />
+            </div>
+          ))}
+        </ScrollContainer>
+      </Partners>
+    </ScrollAnimation>
   )
 }
 

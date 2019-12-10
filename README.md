@@ -28,7 +28,7 @@ Todo
 
 [ ] - product trees
 
-[ ] - provinces map
+[x] - provinces map
 
 [x] - success cases illustration
 
@@ -58,8 +58,8 @@ Todo
 
 [ ] - change email for contact
 
-[ ] - background for main page headers
-
 [x] - add Date js to footer year
 
 [ ] - edit contact number
+
+[ ] - horizontal scroll for partners on mobile fix

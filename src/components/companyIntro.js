@@ -1,5 +1,7 @@
 import React from "react"
 import styled from "styled-components"
+import ScrollAnimation from "react-animate-on-scroll"
+import "animate.css/animate.min.css"
 
 import ConsultingPlanning from "./svg/consultingPlanning"
 import CloudSvg from "./svg/cloudSvg"
@@ -11,118 +13,130 @@ import CheckIcon from "./svg/check"
 
 export default () => (
   <Introduction id="introduction">
-    <h2>专注于财税大数据一站式服务</h2>
+    <ScrollAnimation animateIn="fadeInUp" animateOnce>
+      <h2 className="title">专注于财税大数据一站式服务</h2>
+    </ScrollAnimation>
     <div className="cards">
-      <div className="card">
-        <ConsultingPlanning />
-        <h3>咨询规划</h3>
-        <ul>
-          <li>
-            <CheckIcon />
-            上云咨询
-          </li>
-          <li>
-            <CheckIcon />
-            数据治理
-          </li>
-          <li>
-            <CheckIcon />
-            智能算法
-          </li>
-          <li>
-            <CheckIcon />
-            创新应用
-          </li>
-        </ul>
-      </div>
-      <div className="card">
-        <CloudSvg />
-        <h3>业务上云</h3>
-        <ul>
-          <li>
-            <CheckIcon />
-            降低成本
-          </li>
-          <li>
-            <CheckIcon />
-            提高效率
-          </li>
-          <li>
-            <CheckIcon />
-            便利性
-          </li>
-          <li>
-            <CheckIcon />
-            数据共享
-          </li>
-        </ul>
-      </div>
-      <div className="card">
-        <DataBox />
-        <h3>数据中台</h3>
-        <ul>
-          <li>
-            <CheckIcon />
-            数据资产化
-          </li>
-          <li>
-            <CheckIcon />
-            标准化
-          </li>
-          <li>
-            <CheckIcon />
-            多样化
-          </li>
-          <li>
-            <CheckIcon />
-            实时性
-          </li>
-        </ul>
-      </div>
-      <div className="card">
-        <DataGov />
-        <h3>数据治理</h3>
-        <ul>
-          <li>
-            <CheckIcon />
-            统一性
-          </li>
-          <li>
-            <CheckIcon />
-            自动化
-          </li>
-          <li>
-            <CheckIcon />
-            创新性
-          </li>
-          <li>
-            <CheckIcon />
-            数据计量
-          </li>
-        </ul>
-      </div>
-      <div className="card">
-        <SmartApp />
-        <h3>智能应用</h3>
-        <ul>
-          <li>
-            <CheckIcon />
-            精准预测
-          </li>
-          <li>
-            <CheckIcon />
-            深度学习
-          </li>
-          <li>
-            <CheckIcon />
-            数据智能
-          </li>
-          <li>
-            <CheckIcon />
-            数据驱动
-          </li>
-        </ul>
-      </div>
+      <ScrollAnimation animateIn="fadeInUp" animateOnce>
+        <div className="card">
+          <ConsultingPlanning />
+          <h3>咨询规划</h3>
+          <ul>
+            <li>
+              <CheckIcon />
+              上云咨询
+            </li>
+            <li>
+              <CheckIcon />
+              数据治理
+            </li>
+            <li>
+              <CheckIcon />
+              智能算法
+            </li>
+            <li>
+              <CheckIcon />
+              创新应用
+            </li>
+          </ul>
+        </div>
+      </ScrollAnimation>
+      <ScrollAnimation animateIn="fadeInUp" animateOnce delay={100}>
+        <div className="card">
+          <CloudSvg />
+          <h3>业务上云</h3>
+          <ul>
+            <li>
+              <CheckIcon />
+              降低成本
+            </li>
+            <li>
+              <CheckIcon />
+              提高效率
+            </li>
+            <li>
+              <CheckIcon />
+              便利性
+            </li>
+            <li>
+              <CheckIcon />
+              数据共享
+            </li>
+          </ul>
+        </div>
+      </ScrollAnimation>
+      <ScrollAnimation animateIn="fadeInUp" animateOnce delay={200}>
+        <div className="card">
+          <DataBox />
+          <h3>数据中台</h3>
+          <ul>
+            <li>
+              <CheckIcon />
+              数据资产化
+            </li>
+            <li>
+              <CheckIcon />
+              标准化
+            </li>
+            <li>
+              <CheckIcon />
+              多样化
+            </li>
+            <li>
+              <CheckIcon />
+              实时性
+            </li>
+          </ul>
+        </div>
+      </ScrollAnimation>
+      <ScrollAnimation animateIn="fadeInUp" animateOnce delay={300}>
+        <div className="card">
+          <DataGov />
+          <h3>数据治理</h3>
+          <ul>
+            <li>
+              <CheckIcon />
+              统一性
+            </li>
+            <li>
+              <CheckIcon />
+              自动化
+            </li>
+            <li>
+              <CheckIcon />
+              创新性
+            </li>
+            <li>
+              <CheckIcon />
+              数据计量
+            </li>
+          </ul>
+        </div>
+      </ScrollAnimation>
+      <ScrollAnimation animateIn="fadeInUp" animateOnce delay={400}>
+        <div className="card">
+          <SmartApp />
+          <h3>智能应用</h3>
+          <ul>
+            <li>
+              <CheckIcon />
+              精准预测
+            </li>
+            <li>
+              <CheckIcon />
+              深度学习
+            </li>
+            <li>
+              <CheckIcon />
+              数据智能
+            </li>
+            <li>
+              <CheckIcon />
+              数据驱动
+            </li>
+          </ul>
+        </div>
+      </ScrollAnimation>
     </div>
   </Introduction>
 )
@@ -133,7 +147,7 @@ const Introduction = styled.section`
   position: relative;
   text-align: center;
   z-index: 20;
-  > h2 {
+  .title {
     font-size: 36px;
     margin-bottom: 75px;
   }
