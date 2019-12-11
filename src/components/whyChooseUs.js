@@ -8,36 +8,56 @@ import Check from "../components/svg/check"
 
 export default () => (
   <WhyChooseUs>
-    <ScrollAnimation animateIn="fadeInUp" animateOnce>
+    <ScrollAnimation offset={50} animateIn="fadeInUp" animateOnce>
       <h2 className="title">为什么选择华云慧通</h2>
     </ScrollAnimation>
     <div className="section-content">
-      <ScrollAnimation animateIn="fadeInLeft" animateOnce>
+      <ScrollAnimation offset={50} animateIn="fadeInLeft" animateOnce>
         <ChooseUsSvg />
       </ScrollAnimation>
       <div className="reasons">
         <ul>
-          <ScrollAnimation animateIn="fadeInRight" animateOnce>
+          <ScrollAnimation offset={50} animateIn="fadeInRight" animateOnce>
             <li>
               <Check /> 卓越的市场开拓能力
             </li>
           </ScrollAnimation>
-          <ScrollAnimation animateIn="fadeInRight" animateOnce delay={50}>
+          <ScrollAnimation
+            offset={50}
+            animateIn="fadeInRight"
+            animateOnce
+            delay={50}
+          >
             <li>
               <Check /> 独特数据共享机制
             </li>
           </ScrollAnimation>
-          <ScrollAnimation animateIn="fadeInRight" animateOnce delay={100}>
+          <ScrollAnimation
+            offset={50}
+            animateIn="fadeInRight"
+            animateOnce
+            delay={100}
+          >
             <li>
               <Check /> 深厚的业务、技术积累
             </li>
           </ScrollAnimation>
-          <ScrollAnimation animateIn="fadeInRight" animateOnce delay={150}>
+          <ScrollAnimation
+            offset={50}
+            animateIn="fadeInRight"
+            animateOnce
+            delay={150}
+          >
             <li>
               <Check /> 科学的股权治理
             </li>
           </ScrollAnimation>
-          <ScrollAnimation animateIn="fadeInRight" animateOnce delay={200}>
+          <ScrollAnimation
+            offset={50}
+            animateIn="fadeInRight"
+            animateOnce
+            delay={200}
+          >
             <li>
               <Check /> 超强的战略生态合作体系
             </li>
@@ -80,13 +100,26 @@ const WhyChooseUs = styled.section`
   @media screen and (max-width: 1024px) {
     .section-content {
       flex-direction: column;
+      justify-content: center;
+      align-items: center;
       ul {
         li {
           font-size: 16px;
           margin: 0 10px 20px 10px;
-          padding: 20px 70px;
+          padding: 20px;
+          svg {
+            margin-bottom: 0;
+            height: 18px;
+          }
+          }
         }
       }
+    }
+  }
+  @media screen and (max-width: 768px) {
+    svg {
+      margin-bottom: 20px;
+      max-height: 350px;
     }
   }
 `

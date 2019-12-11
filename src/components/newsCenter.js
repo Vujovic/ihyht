@@ -34,18 +34,19 @@ export default () => {
 
   return (
     <NewsCenter>
-      <ScrollAnimation animateIn="fadeInUp" animateOnce>
+      <ScrollAnimation offset={50} animateIn="fadeInUp" animateOnce>
         <h2 className="title">新闻中心</h2>
         <Link to="/news">查看全部</Link>
       </ScrollAnimation>
       <div className="content">
-        <ScrollAnimation animateIn="fadeInLeft" animateOnce>
+        <ScrollAnimation offset={50} animateIn="fadeInLeft" animateOnce>
           <Illustration />
         </ScrollAnimation>
         <div className="news">
           {data.allStrapiNews.edges.map(edge => (
             <div className="post" key={edge.node.id}>
               <ScrollAnimation
+                offset={50}
                 animateIn="fadeInRight"
                 animateOnce
                 delay={edge.node.id * 50}
@@ -135,14 +136,28 @@ const NewsCenter = styled.section`
     }
   }
   @media screen and (max-width: 1024px) {
+    padding-bottom: 0;
     .content {
       flex-direction: column;
-      svg {
+      > .animated {
         border: none;
-        width: 55%;
+        margin: 5px;
+        padding: 0;
+        width: 95%;
       }
       .news {
         width: 100%;
+        .post {
+          padding: 0 5px;
+          width: calc(100% - 10px);
+          h3 {
+            max-width: 150px;
+          }
+          .animated {
+            padding: 0;
+            width: 100%;
+          }
+        }
       }
     }
   }

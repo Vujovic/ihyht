@@ -4,7 +4,7 @@ import styled from "styled-components"
 export default () => (
   <ContactForm>
     <h2>联系我们</h2>
-    <h3>Tell us a bit about your project</h3>
+    <h3>项目信息</h3>
     <form
       name="contact"
       action="https://formsubmit.io/send/hello@njegos.dev"
@@ -47,7 +47,7 @@ export default () => (
         <textarea name="message" id="message" rows="3" required />
       </label>
       <input name="_formsubmit_id" type="text" style={{ display: "none" }} />
-      <input type="submit" id="submit" />
+      <input type="submit" id="submit" value="发电子邮件" />
     </form>
   </ContactForm>
 )

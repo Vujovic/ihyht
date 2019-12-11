@@ -64,5 +64,9 @@ const ContactQR = styled.div`
   }
   @media screen and (max-width: 768px) {
     flex-direction: column;
+    .code {
+      margin: 20px auto;
+      width: 50px;
+    }
   }
 `

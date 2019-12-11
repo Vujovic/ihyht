@@ -53,6 +53,12 @@ const GlobalStyle = createGlobalStyle`
     color: #3379e0;
     text-decoration: none;
   }
+
+  .react-tabs__tab-list {
+    font-size: 22px;
+    justify-content: space-evenly !important;
+    width: 75% !important;
+  }
 `
 
 export default Layout

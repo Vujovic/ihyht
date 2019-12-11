@@ -161,8 +161,8 @@ const Introduction = styled.section`
       border-radius: 20px;
       box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
       font-size: 24px;
-      margin: 10px 20px;
-      padding: 40px 60px;
+      margin: 10px auto;
+      padding: 40px 50px;
       h3 {
         font-weight: 400;
         margin-top: 25px;

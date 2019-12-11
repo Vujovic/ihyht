@@ -89,6 +89,7 @@ export default class Navigation extends React.Component {
 const customStyles = {
   overlay: {
     zIndex: 300,
+    overflow: "hidden",
   },
 }
 
@@ -225,6 +226,7 @@ const Nav = styled.nav`
       width: 100%;
     }
   }
+
   @keyframes navAnimate {
     0% {
       transform: translateY(-75px);

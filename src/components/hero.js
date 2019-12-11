@@ -113,6 +113,7 @@ const Hero = styled.section`
         background: none;
         border: none;
         cursor: pointer;
+        display: inline-flex;
       }
       svg {
         animation: 1s chevron infinite;

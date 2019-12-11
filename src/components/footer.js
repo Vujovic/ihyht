@@ -31,7 +31,7 @@ export default () => (
 )
 
 const Footer = styled.footer`
-  background-image: linear-gradient(to top right, #2e83e6, #259ec3);
+  background-color: #12355e;
   color: #fff;
   margin-top: 75px;
   padding: 25px 0;
@@ -65,6 +65,17 @@ const Footer = styled.footer`
     svg {
       margin-top: 25px;
       fill: #fff;
+    }
+  }
+  @media screen and (max-width: 1024px) {
+    .company {
+      flex-direction: column;
+      > * {
+        width: 75%;
+      }
+      .contact-info {
+        margin: 25px 0;
+      }
     }
   }
 `

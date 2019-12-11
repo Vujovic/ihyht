@@ -8,7 +8,7 @@ import PhoneIcon from "./svg/phone"
 
 export default () => (
   <ContactCard>
-    <h2>Our Information</h2>
+    <h2>联系方式</h2>
     <p className="contact email">
       <ContactIcon /> hyhtoffw@ihyht.com
     </p>
@@ -47,7 +47,12 @@ const ContactCard = styled.div`
     transform: none;
   }
   @media screen and (max-width: 768px) {
+    text-align: center;
     width: 100%;
+    p {
+      display: inline-block;
+      margin: 0 auto;
+    }
   }
   @keyframes slideUp {
     0% {

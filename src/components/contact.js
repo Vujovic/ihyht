@@ -21,5 +21,6 @@ const Contact = styled.section`
   @media screen and (max-width: 1280px) {
     flex-direction: column;
     justify-content: flex-start;
+    padding: 20px;
   }
 `
