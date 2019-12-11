@@ -1,10 +1,11 @@
 import React from "react"
+import styled from "styled-components"
 
 import { ProductsSm } from "../../templates/productsSm"
 import FeatureCard from "../../templates/featureCard"
 
 import Illustration from "./svg/2"
-
+import Tree from "./svg/productTree2"
 import WebCrawler from "./svg/webCrawler"
 import RealTimeData from "./svg/realTimeData"
 import Computing from "./svg/computing"
@@ -73,6 +74,9 @@ export default () => (
       </div>
       <Illustration />
     </div>
+    <ProductTree>
+      <Tree />
+    </ProductTree>
     <div className="features">
       <h3>产品功能</h3>
       <div className="cards">
@@ -87,3 +91,20 @@ export default () => (
     </div>
   </ProductsSm>
 )
+
+const ProductTree = styled.div`
+  height: 500px;
+  margin: 75px 0;
+  svg {
+    height: 100%;
+  }
+  @media screen and (max-width: 1024px) {
+    height: 250px;
+  }
+  @media screen and (max-width: 500px) {
+    svg {
+      margin: 25px 0;
+      height: 25vh;
+    }
+  }
+`

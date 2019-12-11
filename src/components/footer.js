@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-import { Link } from "gatsby"
+import { Link, useStaticQuery, graphql } from "gatsby"
 
 import ContactQR from "./contactQR"
 import Logo from "./svg/logo"
@@ -32,6 +32,7 @@ export default () => (
 
 const Footer = styled.footer`
   background-color: #12355e;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%232e83e6' fill-opacity='0.54' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
   color: #fff;
   margin-top: 75px;
   padding: 25px 0;
