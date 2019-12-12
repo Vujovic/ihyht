@@ -2,7 +2,7 @@
   "name": "ihyht",
   "private": true,
   "description": "website for ihyht",
-  "version": "0.8.0",
+  "version": "0.9.4",
   "author": "njegos.dev <hello@njegos.dev>",
   "dependencies": {
     "animate.css": "^3.7.2",
