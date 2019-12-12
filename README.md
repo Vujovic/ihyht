@@ -26,7 +26,7 @@ Todo
 
 [ ] - animate
 
-[ ] - product trees
+[x] - product trees
 
 [x] - provinces map
 
@@ -60,6 +60,6 @@ Todo
 
 [x] - add Date js to footer year
 
-[ ] - edit contact number
+[x] - edit contact number
 
 [ ] - horizontal scroll for partners on mobile fix

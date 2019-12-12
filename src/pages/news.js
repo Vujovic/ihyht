@@ -6,6 +6,8 @@ import Img from "gatsby-image"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
+import Illustration from "../components/svg/newsMain"
+
 export default () => {
   const data = useStaticQuery(graphql`
     query getNewsPage {
@@ -34,7 +36,10 @@ export default () => {
     <Layout>
       <SEO title="新闻中心" />
       <NewsCenter>
-        <h2>新闻中心</h2>
+        <div className="hero">
+          <h1>新闻中心</h1>
+          <Illustration />
+        </div>
         <div className="content">
           <div className="news">
             {data.allStrapiNews.edges.map(edge => (
@@ -58,7 +63,6 @@ export default () => {
 }
 
 const NewsCenter = styled.section`
-  padding: 150px 0;
   text-align: center;
   > h2 {
     font-size: 36px;
@@ -69,6 +73,22 @@ const NewsCenter = styled.section`
     transition: all 0.3s;
     :hover {
       opacity: 0.7;
+    }
+  }
+  .hero {
+    align-items: center;
+    background-color: #eee;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 150px;
+    svg {
+      margin-bottom: 75px;
+      max-width: 500px;
+      width: 40%;
+    }
+    h1 {
+      font-size: 36px;
+      text-align: center;
     }
   }
   .content {
@@ -84,13 +104,15 @@ const NewsCenter = styled.section`
       width: 35%;
     }
     .news {
-      width: 50%;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      width: 80%;
       .post {
         box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin: 20px 0;
+        margin: 20px;
         padding: 20px 40px;
         .description > * {
           margin: 10px 0;
@@ -99,6 +121,17 @@ const NewsCenter = styled.section`
           :hover {
             opacity: 0.7;
           }
+        }
+        h3 {
+          padding-right: 5px;
+        }
+        :nth-child(-n + 3) {
+          flex-direction: column-reverse;
+          text-align: center;
+        }
+        :nth-child(n + 4) {
+          grid-column-start: 1;
+          grid-column-end: 4;
         }
       }
     }
