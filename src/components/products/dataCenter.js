@@ -1,4 +1,5 @@
 import React from "react"
+import styled from "styled-components"
 
 import { ProductsSm } from "../../templates/productsSm"
 import FeatureCard from "../../templates/featureCard"
@@ -9,6 +10,7 @@ import WebCrawler from "./svg/webCrawler"
 import RealTimeData from "./svg/realTimeData"
 import Computing from "./svg/computing"
 import Processing from "./svg/processing"
+import Check from "../svg/check"
 
 const features = [
   {
@@ -66,5 +68,121 @@ export default () => (
         ))}
       </div>
     </div>
+    <ProductModule>
+      <h3>产品模块</h3>
+      <div className="moduleCards">
+        <div className="moduleCard">
+          <h4>集成中心</h4>
+          <ul>
+            <li>
+              <Check />
+              采集规则
+            </li>
+            <li>
+              <Check />
+              访问凭证
+            </li>
+            <li>
+              <Check />
+              集成类型
+            </li>
+            <li>
+              <Check />
+              仪表盘
+            </li>
+          </ul>
+        </div>
+        <div className="moduleCard">
+          <h4>数据平台</h4>
+          <ul>
+            <li>
+              <Check />
+              数据库
+            </li>
+            <li>
+              <Check />
+              查询
+            </li>
+            <li>
+              <Check />
+              处理流程
+            </li>
+            <li>
+              <Check />
+              主题库
+            </li>
+          </ul>
+        </div>
+        <div className="moduleCard">
+          <h4>分析中心</h4>
+          <ul>
+            <li>
+              <Check />
+              细分群体
+            </li>
+            <li>
+              <Check />
+              360度画像
+            </li>
+            <li>
+              <Check />
+              预测分析
+            </li>
+            <li>
+              <Check />
+              仪表盘
+            </li>
+          </ul>
+        </div>
+        <div className="moduleCard">
+          <h4>任务中心</h4>
+          <ul>
+            <li>
+              <Check />
+              任务列表
+            </li>
+            <li>
+              <Check />
+              仪表盘
+            </li>
+          </ul>
+        </div>
+      </div>
+    </ProductModule>
   </ProductsSm>
 )
+
+const ProductModule = styled.div`
+  padding: 75px 0;
+  h3 {
+    font-size: 22px;
+    margin-bottom: 55px;
+  }
+
+  .moduleCards {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    .moduleCard {
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+      margin: 20px;
+      padding: 40px;
+      h4 {
+        font-size: 22px;
+        margin-bottom: 25px;
+      }
+      ul {
+        list-style-type: none;
+      }
+      li {
+        font-size: 18px;
+        margin: 10px 0;
+        text-align: left;
+      }
+      svg {
+        margin-right: 15px;
+        width: 18px;
+      }
+    }
+  }
+`

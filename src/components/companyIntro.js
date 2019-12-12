@@ -84,7 +84,7 @@ export default () => (
             </li>
             <li>
               <CheckIcon />
-              实时性
+              智能化
             </li>
           </ul>
         </div>

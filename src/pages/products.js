@@ -26,14 +26,17 @@ export default () => (
     <TabSection>
       <Tabs>
         <TabList>
+          <Tab>数据中台</Tab>
           <Tab>智能应用</Tab>
           <Tab>智能分析</Tab>
           <Tab>数据采集</Tab>
           <Tab>数据治理</Tab>
-          <Tab>数据中台</Tab>
           <Tab>智能算法</Tab>
         </TabList>
 
+        <TabPanel>
+          <DataCenter />
+        </TabPanel>
         <TabPanel>
           <SmartApplication />
         </TabPanel>
@@ -45,9 +48,6 @@ export default () => (
         </TabPanel>
         <TabPanel>
           <DataGovernance />
-        </TabPanel>
-        <TabPanel>
-          <DataCenter />
         </TabPanel>
         <TabPanel>
           <IntelligentAlgorithm />

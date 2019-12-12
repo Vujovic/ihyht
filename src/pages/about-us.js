@@ -10,9 +10,18 @@ import Partners from "../components/about/partners"
 import Contact from "../components/about/contactUs"
 import Careers from "../components/about/careers"
 
+import Illustration from "../components/svg/aboutUsMain"
+
 export default () => (
   <Layout>
     <SEO title="关于我们" />
+    <Hero>
+      <div className="text">
+        <h1>关于我们</h1>
+        <p>财税大数据领先企业</p>
+      </div>
+      <Illustration />
+    </Hero>
     <TabSection>
       <Tabs>
         <TabList>
@@ -42,6 +51,23 @@ export default () => (
     </TabSection>
   </Layout>
 )
+
+const Hero = styled.section`
+  align-items: center;
+  background-color: #eee;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 150px;
+  svg {
+    margin-bottom: 75px;
+    max-width: 600px;
+    width: 40%;
+  }
+  h1 {
+    font-size: 36px;
+    text-align: center;
+  }
+`
 
 const TabSection = styled.section`
   padding-top: 150px;

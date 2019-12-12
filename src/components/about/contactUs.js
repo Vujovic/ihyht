@@ -21,7 +21,7 @@ export default () => {
   return (
     <>
       <Branches>
-        <h2>子分机构</h2>
+        <h2>分支机构</h2>
         <div className="hero">
           <div className="branches">
             <div className="branch">

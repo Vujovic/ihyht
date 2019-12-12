@@ -10,10 +10,10 @@ export default () => (
   <ContactCard>
     <h2>联系方式</h2>
     <p className="contact email">
-      <ContactIcon /> hyhtoffw@ihyht.com
+      <ContactIcon /> web@ihyht.com
     </p>
     <p className="contact phone">
-      <PhoneIcon /> +86 188 1111 1111
+      <PhoneIcon /> +86 010 6477 6380
     </p>
     <ContactQR />
   </ContactCard>

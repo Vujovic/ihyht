@@ -1,6 +1,9 @@
 import styled from "styled-components"
 
 export const ProductsSm = styled.section`
+  h3 {
+    font-size: 22px;
+  }
   text-align: center;
   .description {
     margin-top: 150px;

@@ -57,7 +57,7 @@ const GlobalStyle = createGlobalStyle`
   .react-tabs__tab-list {
     font-size: 22px;
     justify-content: space-evenly !important;
-    width: 75% !important;
+    width: 90% !important;
   }
 `
 

@@ -10,7 +10,10 @@ import Illustration from "../svg/about"
 
 export default () => (
   <About>
-    <h2>企业简介</h2>
+    <div className="text">
+      <h2>企业简介</h2>
+    </div>
+
     <ScrollAnimation animateIn="fadeInUp" className="info" animateOnce>
       <div className="text">
         <p>
