@@ -8,6 +8,7 @@
     "animate.css": "^3.7.2",
     "babel-plugin-styled-components": "^1.10.6",
     "gatsby": "^2.17.11",
+    "gatsby-background-image": "^0.9.12",
     "gatsby-image": "^2.2.31",
     "gatsby-plugin-manifest": "^2.2.27",
     "gatsby-plugin-nprogress": "^2.1.15",
@@ -21,18 +22,21 @@
     "gatsby-source-filesystem": "^2.1.36",
     "gatsby-source-strapi": "0.0.10",
     "gatsby-transformer-sharp": "^2.3.3",
+    "intersection-observer": "^0.7.0",
     "prop-types": "^15.7.2",
     "react": "^16.11.0",
     "react-animate-on-scroll": "^2.1.5",
     "react-dom": "^16.11.0",
     "react-helmet": "^5.2.1",
+    "react-id-swiper": "^2.4.0",
     "react-indiana-drag-scroll": "^1.5.2",
     "react-markdown": "^4.2.2",
     "react-modal": "^3.11.1",
     "react-table": "^6.10.3",
     "react-tabs": "^3.0.0",
     "react-vertical-timeline-component": "^2.5.0",
-    "styled-components": "^4.4.1"
+    "styled-components": "^4.4.1",
+    "swiper": "^5.2.1"
   },
   "devDependencies": {
     "prettier": "^1.19.1"

@@ -3,9 +3,9 @@ import styled from "styled-components"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 import scrollTo from "gatsby-plugin-smoothscroll"
+import BackgroundImage from "gatsby-background-image"
 
 import ParticleBg from "./particleBg"
-import bgImage from "../images/earthBG.jpg"
 
 export default () => {
   const data = useStaticQuery(graphql`
@@ -17,11 +17,18 @@ export default () => {
           }
         }
       }
+      background: file(relativePath: { eq: "earthBG.jpg" }) {
+        childImageSharp {
+          fluid(maxWidth: 1920, quality: 100) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
     }
   `)
 
   return (
-    <Hero>
+    <Hero Tag="section" fluid={data.background.childImageSharp.fluid}>
       <ParticleBg />
       <div className="earthImage">
         <Img
@@ -55,10 +62,7 @@ export default () => {
   )
 }
 
-const Hero = styled.section`
-  background: url(${bgImage});
-  background-size: cover;
-  background-repeat: no-repeat;
+const Hero = styled(BackgroundImage)`
   height: 100vh;
   position: relative;
   width: 100%;
