@@ -7,8 +7,6 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 export default props => {
-  console.log(props.data)
-
   return (
     <Layout>
       <SEO title={props.data.title} />

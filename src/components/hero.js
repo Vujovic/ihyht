@@ -28,7 +28,11 @@ export default () => {
   `)
 
   return (
-    <Hero Tag="section" fluid={data.background.childImageSharp.fluid}>
+    <Hero
+      Tag="section"
+      fluid={data.background.childImageSharp.fluid}
+      backgroundColor={`#142470`}
+    >
       <ParticleBg />
       <div className="earthImage">
         <Img

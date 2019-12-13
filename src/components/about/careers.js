@@ -35,12 +35,15 @@ export default () => {
         </ul>
         {data.allStrapiCareers.edges.map(edge => (
           <div className="card" key={edge.node.id}>
-            <ul>
-              <li>{edge.node.positionName}</li>
-              <li>{edge.node.jobCategory}</li>
-              <li>{edge.node.Location}</li>
-              <li>{edge.node.postDate}</li>
-            </ul>
+            <input id={edge.node.id} class="toggle" type="checkbox" />
+            <label for={edge.node.id} class="lbl-toggle">
+              <ul>
+                <li>{edge.node.positionName}</li>
+                <li>{edge.node.jobCategory}</li>
+                <li>{edge.node.Location}</li>
+                <li>{edge.node.postDate}</li>
+              </ul>
+            </label>
             <div className="description">
               <div className="content">
                 <h3>学历: {edge.node.Education}</h3>
@@ -68,24 +71,43 @@ const Careers = styled.section`
     justify-content: space-evenly;
     list-style-type: none;
     padding: 25px;
+    li {
+      width: 25%;
+    }
   }
   .card-header {
     background-color: #2e83e6;
     color: #fff;
   }
   .card {
+    input[type="checkbox"] {
+      display: none;
+    }
     ul {
+      border: 1px solid #eee;
       cursor: pointer;
       :hover {
         color: #2e83e6;
       }
     }
+    .toggle:checked + .lbl-toggle + .description {
+      max-height: 500vh;
+    }
+    .toggle:checked + .lbl-toggle::before {
+      transform: rotate(90deg) translateX(-3px);
+    }
+
+    .toggle:checked + .lbl-toggle {
+      border-bottom-right-radius: 0;
+      border-bottom-left-radius: 0;
+    }
   }
   .description {
     background-color: #eee;
-    margin: 0 auto;
-    padding: 25px;
+    max-height: 0px;
+    overflow: hidden;
     text-align: left;
+    transition: max-height 0.5s ease-in-out;
     .content {
       margin: 0 auto;
       width: 75%;
