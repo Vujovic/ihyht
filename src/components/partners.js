@@ -61,6 +61,7 @@ const Partners = styled.section`
   }
   @media screen and (max-width: 768px) {
     .cards {
+      justify-content: flex-start;
       .card {
         width: 75%;
       }

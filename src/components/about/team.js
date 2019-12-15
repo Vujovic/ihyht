@@ -121,6 +121,7 @@ const Team = styled.section`
   }
   .team-cards {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     .card {
       box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
