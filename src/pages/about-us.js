@@ -27,7 +27,7 @@ export default () => (
       <Tabs>
         <TabList>
           <Tab>企业简介</Tab>
-          <Tab>核心管理团队</Tab>
+          <Tab>管理团队</Tab>
           <Tab>合作伙伴</Tab>
           <Tab>联系我们</Tab>
           <Tab>职位信息</Tab>
@@ -61,7 +61,7 @@ const Hero = styled.section`
   padding-top: 150px;
   svg {
     margin-bottom: 75px;
-    max-width: 600px;
+    max-height: 520px;
     width: 40%;
   }
   h1 {

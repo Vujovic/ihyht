@@ -48,8 +48,11 @@ export default () => {
               <div className="content">
                 <h3>学历: {edge.node.Education}</h3>
                 <h3>本科: {edge.node.Experience}</h3>
-                <ReactMarkdown source={edge.node.jobDescription} />
-                <a href="mailto:name@email.com">发电子邮件</a>
+                <ReactMarkdown
+                  source={edge.node.jobDescription}
+                  escapeHtml={false}
+                />
+                <a href="mailto:web@ihyht.com">申请职位</a>
               </div>
             </div>
           </div>

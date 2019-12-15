@@ -152,6 +152,18 @@ const Branches = styled.section`
       width: 50%;
     }
   }
+
+  @media screen and (max-width: 1024px) {
+    .hero {
+      flex-direction: column-reverse;
+      .branch {
+        padding: 0 20px;
+      }
+      .gatsby-image-wrapper {
+        width: 100%;
+      }
+    }
+  }
 `
 
 const Form = styled.section`
@@ -203,7 +215,11 @@ const Form = styled.section`
     }
   }
   @media screen and (max-width: 1280px) {
-    form {
+    .content {
+      flex-direction: column;
+      svg {
+        width: 100%;
+      }
     }
   }
   @media screen and (max-width: 768px) {

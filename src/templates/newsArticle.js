@@ -11,7 +11,10 @@ export default props => {
     <Layout>
       <SEO title={props.data.title} />
       <NewsArticle>
-        <ReactMarkdown source={props.data.strapiNews.newsArticle} />
+        <ReactMarkdown
+          source={props.data.strapiNews.newsArticle}
+          escapeHtml={false}
+        />
       </NewsArticle>
     </Layout>
   )
@@ -44,5 +47,27 @@ const NewsArticle = styled.section`
     display: block;
     max-width: 90%;
     margin: 75px auto;
+  }
+  .news-grid {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px auto;
+    justify-content: space-evenly;
+    figure {
+      overflow: hidden;
+      display: inline-block;
+      text-align: center;
+      margin: 5px;
+      img {
+        border-radius: 0 50px;
+        height: 600px;
+        margin: 5px;
+        vertical-align: top;
+      }
+      figcaption {
+        font-size: 20px;
+        margin-top: 20px;
+      }
+    }
   }
 `

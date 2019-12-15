@@ -25,66 +25,10 @@ export default () => (
     <VerticalTimeline>
       <VerticalTimelineElement
         className="vertical-timeline-element--work"
-        date="2016.08"
-        icon={<FoundedIcon />}
+        date="2018.12"
+        icon={<Shangdong />}
       >
-        <h1>公司成立</h1>
-      </VerticalTimelineElement>
-      <VerticalTimelineElement
-        className="vertical-timeline-element--work"
-        date="2016.09"
-        icon={<Partnership />}
-      >
-        <h1>与阿里战略合作</h1>
-      </VerticalTimelineElement>
-      <VerticalTimelineElement
-        className="vertical-timeline-element--work"
-        date="2016.12"
-        icon={<Cloud />}
-      >
-        <h1>广东国税电子税局云平台</h1>
-      </VerticalTimelineElement>
-      <VerticalTimelineElement
-        className="vertical-timeline-element--work"
-        date="2017.01"
-        icon={<Tax />}
-      >
-        <h1>广东税务大数据平台</h1>
-      </VerticalTimelineElement>
-      <VerticalTimelineElement
-        className="vertical-timeline-element--work"
-        date="2017.05"
-        icon={<DataAlliance />}
-      >
-        <h1>中关村大数据产业联盟</h1>
-      </VerticalTimelineElement>
-      <VerticalTimelineElement
-        className="vertical-timeline-element--work"
-        date="2017.10"
-        icon={<Transport />}
-      >
-        <h1>交通委ETC电子发票云平台</h1>
-      </VerticalTimelineElement>
-      <VerticalTimelineElement
-        className="vertical-timeline-element--work"
-        date="2018.02"
-        icon={<BigDataAlliance />}
-      >
-        <h1>广东税务大数据创新应用</h1>
-      </VerticalTimelineElement>
-      <VerticalTimelineElement
-        className="vertical-timeline-element--work"
-        date="2018.05"
-        icon={<ProvinceTax />}
-      >
-        <h1>山东国税实名办税全省上线</h1>
-      </VerticalTimelineElement>
-      <VerticalTimelineElement
-        className="vertical-timeline-element--work"
-        date="2018.06"
-        icon={<Algorithm />}
-      >
-        <h1>税务智能算法发布</h1>
+        <h1>山东税务大数据平台</h1>
       </VerticalTimelineElement>
       <VerticalTimelineElement
         className="vertical-timeline-element--work"
@@ -95,10 +39,66 @@ export default () => (
       </VerticalTimelineElement>
       <VerticalTimelineElement
         className="vertical-timeline-element--work"
-        date="2018.12"
-        icon={<Shangdong />}
+        date="2018.06"
+        icon={<Algorithm />}
       >
-        <h1>山东税务大数据平台</h1>
+        <h1>税务智能算法发布</h1>
+      </VerticalTimelineElement>
+      <VerticalTimelineElement
+        className="vertical-timeline-element--work"
+        date="2018.05"
+        icon={<ProvinceTax />}
+      >
+        <h1>山东国税实名办税全省上线</h1>
+      </VerticalTimelineElement>
+      <VerticalTimelineElement
+        className="vertical-timeline-element--work"
+        date="2018.02"
+        icon={<BigDataAlliance />}
+      >
+        <h1>广东税务大数据创新应用</h1>
+      </VerticalTimelineElement>
+      <VerticalTimelineElement
+        className="vertical-timeline-element--work"
+        date="2017.10"
+        icon={<Transport />}
+      >
+        <h1>交通委ETC电子发票云平台</h1>
+      </VerticalTimelineElement>
+      <VerticalTimelineElement
+        className="vertical-timeline-element--work"
+        date="2017.05"
+        icon={<DataAlliance />}
+      >
+        <h1>中关村大数据产业联盟</h1>
+      </VerticalTimelineElement>
+      <VerticalTimelineElement
+        className="vertical-timeline-element--work"
+        date="2017.01"
+        icon={<Tax />}
+      >
+        <h1>广东税务大数据平台</h1>
+      </VerticalTimelineElement>
+      <VerticalTimelineElement
+        className="vertical-timeline-element--work"
+        date="2016.12"
+        icon={<Cloud />}
+      >
+        <h1>广东国税电子税局云平台</h1>
+      </VerticalTimelineElement>
+      <VerticalTimelineElement
+        className="vertical-timeline-element--work"
+        date="2016.09"
+        icon={<Partnership />}
+      >
+        <h1>与阿里战略合作</h1>
+      </VerticalTimelineElement>
+      <VerticalTimelineElement
+        className="vertical-timeline-element--work"
+        date="2016.08"
+        icon={<FoundedIcon />}
+      >
+        <h1>公司成立</h1>
       </VerticalTimelineElement>
     </VerticalTimeline>
   </History>

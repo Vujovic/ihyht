@@ -8,6 +8,7 @@ exports.createPages = ({ graphql, actions }) => {
           edges {
             node {
               link
+              title
             }
           }
         }
@@ -19,6 +20,7 @@ exports.createPages = ({ graphql, actions }) => {
           component: path.resolve('./src/templates/newsArticle.js'),
           context: {
             link: edge.node.link,
+            title: edge.node.title,
           },
         })
       })
