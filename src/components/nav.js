@@ -1,15 +1,15 @@
-import React from "react"
-import { Link } from "gatsby"
-import styled from "styled-components"
-import ReactModal from "react-modal"
+import React from 'react'
+import { Link } from 'gatsby'
+import styled from 'styled-components'
+import ReactModal from 'react-modal'
 
-import Contact from "./contact"
+import Contact from './contact'
 
-import Logo from "./svg/logo"
-import ContactIcon from "./svg/contact"
-import search from "../images/search.png"
+import Logo from './svg/logo'
+import ContactIcon from './svg/contact'
+import search from '../images/search.png'
 
-import "../styles/hamburger.css"
+import '../styles/hamburger.css'
 
 ReactModal.setAppElement(`#___gatsby`)
 export default class Navigation extends React.Component {
@@ -34,8 +34,8 @@ export default class Navigation extends React.Component {
             aria-label="Menu"
             className={
               this.state.isMenuActive
-                ? "hamburger hamburger--spin is-active"
-                : "hamburger hamburger--spin"
+                ? 'hamburger hamburger--spin is-active'
+                : 'hamburger hamburger--spin'
             }
           >
             <span className="hamburger-box">
@@ -43,7 +43,7 @@ export default class Navigation extends React.Component {
             </span>
           </button>
         </div>
-        <div className={this.state.isMenuActive ? "menu" : "menu hidden"}>
+        <div className={this.state.isMenuActive ? 'menu' : 'menu hidden'}>
           <ul>
             <li>
               <Link to="/products">产品中心</Link>
@@ -89,7 +89,7 @@ export default class Navigation extends React.Component {
 const customStyles = {
   overlay: {
     zIndex: 300,
-    overflow: "hidden",
+    overflow: 'hidden',
   },
 }
 
@@ -129,7 +129,7 @@ const Nav = styled.nav`
         :after {
           background: none repeat scroll 0 0 transparent;
           bottom: 0;
-          content: "";
+          content: '';
           display: block;
           height: 2px;
           left: 50%;

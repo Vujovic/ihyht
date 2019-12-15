@@ -1,8 +1,8 @@
-import React from "react"
-import { createGlobalStyle } from "styled-components"
+import React from 'react'
+import { createGlobalStyle } from 'styled-components'
 
-import Nav from "./nav"
-import Footer from "./footer"
+import Nav from './nav'
+import Footer from './footer'
 
 const Layout = ({ children }) => (
   <>

@@ -1,38 +1,44 @@
-import React from "react"
-import styled from "styled-components"
-import { Tab, Tabs, TabList, TabPanel } from "react-tabs"
+import React from 'react'
+import styled from 'styled-components'
+import { Tab, Tabs, TabList, TabPanel } from 'react-tabs'
+import ScrollAnimation from 'react-animate-on-scroll'
+import 'animate.css/animate.min.css'
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import SmartApplication from "../components/products/smartApplication"
-import Insight from "../components/products/insight"
-import DataCollection from "../components/products/dataCollection"
-import DataGovernance from "../components/products/dataGovernance"
-import DataCenter from "../components/products/dataCenter"
-import IntelligentAlgorithm from "../components/products/intelligentAlgorithm"
+import Layout from '../components/layout'
+import SEO from '../components/seo'
+import SmartApplication from '../components/products/smartApplication'
+import Insight from '../components/products/insight'
+import DataCollection from '../components/products/dataCollection'
+import DataGovernance from '../components/products/dataGovernance'
+import DataCenter from '../components/products/dataCenter'
+import IntelligentAlgorithm from '../components/products/intelligentAlgorithm'
 
-import Illustration from "../components/svg/productsMain"
+import Illustration from '../components/svg/productsMain'
 
 export default () => (
   <Layout>
     <SEO title="产品中心" />
-    <Hero>
-      <div className="text">
-        <h1>产品中心</h1>
-        <p>构建面向政府、大型企业和金融科技三维一体的财税大数据产品体系</p>
-      </div>
-      <Illustration />
-    </Hero>
+    <ScrollAnimation offset={50} animateIn="fadeIn" animateOnce>
+      <Hero>
+        <div className="text">
+          <h1>产品中心</h1>
+          <p>构建面向政府、大型企业和金融科技三维一体的财税大数据产品体系</p>
+        </div>
+        <Illustration />
+      </Hero>
+    </ScrollAnimation>
     <TabSection>
       <Tabs>
-        <TabList>
-          <Tab>数据中台</Tab>
-          <Tab>智能应用</Tab>
-          <Tab>智能分析</Tab>
-          <Tab>数据采集</Tab>
-          <Tab>数据治理</Tab>
-          <Tab>智能算法</Tab>
-        </TabList>
+        <ScrollAnimation offset={50} animateIn="fadeInUp" animateOnce>
+          <TabList>
+            <Tab>数据中台</Tab>
+            <Tab>智能应用</Tab>
+            <Tab>智能分析</Tab>
+            <Tab>数据采集</Tab>
+            <Tab>数据治理</Tab>
+            <Tab>智能算法</Tab>
+          </TabList>
+        </ScrollAnimation>
 
         <TabPanel>
           <DataCenter />

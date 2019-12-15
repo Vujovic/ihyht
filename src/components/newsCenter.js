@@ -1,12 +1,12 @@
-import React from "react"
-import styled from "styled-components"
-import { Link, useStaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
-import ScrollAnimation from "react-animate-on-scroll"
-import "animate.css/animate.min.css"
+import React from 'react'
+import styled from 'styled-components'
+import { Link, useStaticQuery, graphql } from 'gatsby'
+import Img from 'gatsby-image'
+import ScrollAnimation from 'react-animate-on-scroll'
+import 'animate.css/animate.min.css'
 
-import Illustration from "./svg/readingNews"
-import NewsIcon from "./svg/newsIcon"
+import Illustration from './svg/readingNews'
+import NewsIcon from './svg/newsIcon'
 
 export default () => {
   const data = useStaticQuery(graphql`

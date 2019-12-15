@@ -1,5 +1,5 @@
-import React from "react"
-import styled from "styled-components"
+import React from 'react'
+import styled from 'styled-components'
 
 export default () => (
   <Logo fill="#1D4785" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 310 101">

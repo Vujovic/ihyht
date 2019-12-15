@@ -1,10 +1,10 @@
-import React from "react"
-import styled from "styled-components"
-import ScrollAnimation from "react-animate-on-scroll"
-import "animate.css/animate.min.css"
+import React from 'react'
+import styled from 'styled-components'
+import ScrollAnimation from 'react-animate-on-scroll'
+import 'animate.css/animate.min.css'
 
-import ChooseUsSvg from "../components/svg/chooseUsSvg"
-import Check from "../components/svg/check"
+import ChooseUsSvg from '../components/svg/chooseUsSvg'
+import Check from '../components/svg/check'
 
 export default () => (
   <WhyChooseUs>

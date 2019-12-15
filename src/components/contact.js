@@ -1,8 +1,8 @@
-import React from "react"
-import styled from "styled-components"
+import React from 'react'
+import styled from 'styled-components'
 
-import ContactCard from "./contactCard"
-import ContactForm from "./contactForm"
+import ContactCard from './contactCard'
+import ContactForm from './contactForm'
 
 export default () => (
   <Contact>

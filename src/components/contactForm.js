@@ -1,5 +1,5 @@
-import React from "react"
-import styled from "styled-components"
+import React from 'react'
+import styled from 'styled-components'
 
 export default () => (
   <ContactForm>
@@ -46,7 +46,7 @@ export default () => (
         留言信息
         <textarea name="message" id="message" rows="3" required />
       </label>
-      <input name="_formsubmit_id" type="text" style={{ display: "none" }} />
+      <input name="_formsubmit_id" type="text" style={{ display: 'none' }} />
       <input type="submit" id="submit" value="发电子邮件" />
     </form>
   </ContactForm>

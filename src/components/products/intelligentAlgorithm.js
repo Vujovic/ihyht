@@ -1,36 +1,36 @@
-import React from "react"
+import React from 'react'
 
-import { ProductsSm } from "../../templates/productsSm"
-import FeatureCard from "../../templates/featureCard"
+import { ProductsSm } from '../../templates/productsSm'
+import FeatureCard from '../../templates/featureCard'
 
-import Illustration from "./svg/6"
+import Illustration from './svg/6'
 // Icons
-import WebCrawler from "./svg/webCrawler"
-import RealTimeData from "./svg/realTimeData"
-import Computing from "./svg/computing"
-import Processing from "./svg/processing"
+import WebCrawler from './svg/webCrawler'
+import RealTimeData from './svg/realTimeData'
+import Computing from './svg/computing'
+import Processing from './svg/processing'
 
 const features = [
   {
     icon: <WebCrawler />,
-    title: "基础算法",
+    title: '基础算法',
     description:
-      "基础文本分析套件, 相似度量, 地址名称类, 企业纳税人归集, 文本信息抽取, 语义分析",
+      '基础文本分析套件, 相似度量, 地址名称类, 企业纳税人归集, 文本信息抽取, 语义分析',
   },
   {
     icon: <RealTimeData />,
-    title: "智能风控",
-    description: "虚开增值税发票智能识别, 进销相似企业识别, 异常团伙企业发现",
+    title: '智能风控',
+    description: '虚开增值税发票智能识别, 进销相似企业识别, 异常团伙企业发现',
   },
   {
     icon: <Computing />,
-    title: "智能征管",
-    description: "非正常户事前预测, 企业信用评估",
+    title: '智能征管',
+    description: '非正常户事前预测, 企业信用评估',
   },
   {
     icon: <Processing />,
-    title: "智能纳服",
-    description: "税务问答社区, 纳服能力评估",
+    title: '智能纳服',
+    description: '税务问答社区, 纳服能力评估',
   },
 ]
 
@@ -57,6 +57,7 @@ export default () => (
       <div className="cards">
         {features.map(card => (
           <FeatureCard
+            key={card.title}
             icon={card.icon}
             title={card.title}
             description={card.description}

@@ -1,9 +1,9 @@
-import React from "react"
-import styled from "styled-components"
-import { Link } from "gatsby"
+import React from 'react'
+import styled from 'styled-components'
+import { Link } from 'gatsby'
 
-import ContactQR from "./contactQR"
-import Logo from "./svg/logo"
+import ContactQR from './contactQR'
+import Logo from './svg/logo'
 
 export default () => (
   <Footer>

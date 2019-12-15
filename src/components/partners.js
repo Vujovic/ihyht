@@ -1,10 +1,10 @@
-import React from "react"
-import styled from "styled-components"
-import { useStaticQuery, graphql } from "gatsby"
-import ScrollContainer from "react-indiana-drag-scroll"
-import Img from "gatsby-image"
-import ScrollAnimation from "react-animate-on-scroll"
-import "animate.css/animate.min.css"
+import React from 'react'
+import styled from 'styled-components'
+import { useStaticQuery, graphql } from 'gatsby'
+import ScrollContainer from 'react-indiana-drag-scroll'
+import Img from 'gatsby-image'
+import ScrollAnimation from 'react-animate-on-scroll'
+import 'animate.css/animate.min.css'
 
 export default () => {
   const data = useStaticQuery(graphql`

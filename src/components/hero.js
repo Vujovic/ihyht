@@ -1,11 +1,11 @@
-import React from "react"
-import styled from "styled-components"
-import { useStaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
-import scrollTo from "gatsby-plugin-smoothscroll"
-import BackgroundImage from "gatsby-background-image"
+import React from 'react'
+import styled from 'styled-components'
+import { useStaticQuery, graphql } from 'gatsby'
+import Img from 'gatsby-image'
+import scrollTo from 'gatsby-plugin-smoothscroll'
+import BackgroundImage from 'gatsby-background-image'
 
-import ParticleBg from "./particleBg"
+import ParticleBg from './particleBg'
 
 export default () => {
   const data = useStaticQuery(graphql`
@@ -45,7 +45,7 @@ export default () => {
         <h1>财税大数据资产管理与运营服务提供商</h1>
         <h2>挖掘财税大数据价值，为政府决策、企业服务和金融风控科技赋能</h2>
         <div className="button">
-          <button onClick={() => scrollTo("#introduction")}>
+          <button onClick={() => scrollTo('#introduction')}>
             <svg
               width="86"
               height="45"

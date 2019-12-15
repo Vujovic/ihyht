@@ -1,15 +1,15 @@
-import React from "react"
-import styled from "styled-components"
-import ScrollAnimation from "react-animate-on-scroll"
-import "animate.css/animate.min.css"
+import React from 'react'
+import styled from 'styled-components'
+import ScrollAnimation from 'react-animate-on-scroll'
+import 'animate.css/animate.min.css'
 
-import ConsultingPlanning from "./svg/consultingPlanning"
-import CloudSvg from "./svg/cloudSvg"
-import DataBox from "./svg/dataBox"
-import DataGov from "./svg/dataGov"
-import SmartApp from "./svg/smartApp"
+import ConsultingPlanning from './svg/consultingPlanning'
+import CloudSvg from './svg/cloudSvg'
+import DataBox from './svg/dataBox'
+import DataGov from './svg/dataGov'
+import SmartApp from './svg/smartApp'
 
-import CheckIcon from "./svg/check"
+import CheckIcon from './svg/check'
 
 export default () => (
   <Introduction id="introduction">

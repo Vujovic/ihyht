@@ -1,16 +1,17 @@
-import React from "react"
-import styled from "styled-components"
-import { Tab, Tabs, TabList, TabPanel } from "react-tabs"
+import React from 'react'
+import styled from 'styled-components'
+import { Tab, Tabs, TabList, TabPanel } from 'react-tabs'
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Layout from '../components/layout'
+import SEO from '../components/seo'
 
-import About from "../components/about/about"
-import Partners from "../components/about/partners"
-import Contact from "../components/about/contactUs"
-import Careers from "../components/about/careers"
+import About from '../components/about/about'
+import Team from '../components/about/team'
+import Partners from '../components/about/partners'
+import Contact from '../components/about/contactUs'
+import Careers from '../components/about/careers'
 
-import Illustration from "../components/svg/aboutUsMain"
+import Illustration from '../components/svg/aboutUsMain'
 
 export default () => (
   <Layout>
@@ -26,7 +27,7 @@ export default () => (
       <Tabs>
         <TabList>
           <Tab>企业简介</Tab>
-          <Tab>Team</Tab>
+          <Tab>核心管理团队</Tab>
           <Tab>合作伙伴</Tab>
           <Tab>联系我们</Tab>
           <Tab>职位信息</Tab>
@@ -36,7 +37,7 @@ export default () => (
           <About />
         </TabPanel>
         <TabPanel>
-          <h2>Team</h2>
+          <Team />
         </TabPanel>
         <TabPanel>
           <Partners />
@@ -71,8 +72,6 @@ const Hero = styled.section`
 
 const TabSection = styled.section`
   padding-top: 150px;
-  .react-tabs {
-  }
   .react-tabs__tab-list {
     border: none;
     cursor: pointer;

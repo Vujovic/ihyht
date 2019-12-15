@@ -1,7 +1,7 @@
-import React from "react"
-import styled from "styled-components"
-import { useStaticQuery, graphql } from "gatsby"
-import ReactMarkdown from "react-markdown"
+import React from 'react'
+import styled from 'styled-components'
+import { useStaticQuery, graphql } from 'gatsby'
+import ReactMarkdown from 'react-markdown'
 
 export default () => {
   const data = useStaticQuery(graphql`
@@ -35,8 +35,8 @@ export default () => {
         </ul>
         {data.allStrapiCareers.edges.map(edge => (
           <div className="card" key={edge.node.id}>
-            <input id={edge.node.id} class="toggle" type="checkbox" />
-            <label for={edge.node.id} class="lbl-toggle">
+            <input id={edge.node.id} className="toggle" type="checkbox" />
+            <label htmlFor={edge.node.id} className="lbl-toggle">
               <ul>
                 <li>{edge.node.positionName}</li>
                 <li>{edge.node.jobCategory}</li>
@@ -80,7 +80,7 @@ const Careers = styled.section`
     color: #fff;
   }
   .card {
-    input[type="checkbox"] {
+    input[type='checkbox'] {
       display: none;
     }
     ul {

@@ -1,10 +1,10 @@
-import React from "react"
-import styled from "styled-components"
+import React from 'react'
+import styled from 'styled-components'
 
-import ContactQR from "./contactQR"
+import ContactQR from './contactQR'
 
-import ContactIcon from "./svg/contact"
-import PhoneIcon from "./svg/phone"
+import ContactIcon from './svg/contact'
+import PhoneIcon from './svg/phone'
 
 export default () => (
   <ContactCard>

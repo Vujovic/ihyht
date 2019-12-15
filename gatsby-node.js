@@ -1,4 +1,4 @@
-const path = require("path")
+const path = require('path')
 
 exports.createPages = ({ graphql, actions }) => {
   return new Promise((resolve, reject) => {
@@ -16,7 +16,7 @@ exports.createPages = ({ graphql, actions }) => {
       results.data.allStrapiNews.edges.forEach(edge => {
         actions.createPage({
           path: edge.node.link,
-          component: path.resolve("./src/templates/newsArticle.js"),
+          component: path.resolve('./src/templates/newsArticle.js'),
           context: {
             link: edge.node.link,
           },

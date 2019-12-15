@@ -1,23 +1,23 @@
-import React from "react"
-import styled from "styled-components"
+import React from 'react'
+import styled from 'styled-components'
 
 import {
   VerticalTimeline,
   VerticalTimelineElement,
-} from "react-vertical-timeline-component"
-import "react-vertical-timeline-component/style.min.css"
+} from 'react-vertical-timeline-component'
+import 'react-vertical-timeline-component/style.min.css'
 
-import FoundedIcon from "./svg/1"
-import Partnership from "./svg/2"
-import Cloud from "./svg/3"
-import Tax from "./svg/4"
-import DataAlliance from "./svg/5"
-import Transport from "./svg/6"
-import BigDataAlliance from "./svg/7"
-import ProvinceTax from "./svg/8"
-import Algorithm from "./svg/9"
-import BigData from "./svg/10"
-import Shangdong from "./svg/11"
+import FoundedIcon from './svg/1'
+import Partnership from './svg/2'
+import Cloud from './svg/3'
+import Tax from './svg/4'
+import DataAlliance from './svg/5'
+import Transport from './svg/6'
+import BigDataAlliance from './svg/7'
+import ProvinceTax from './svg/8'
+import Algorithm from './svg/9'
+import BigData from './svg/10'
+import Shangdong from './svg/11'
 
 export default () => (
   <History>

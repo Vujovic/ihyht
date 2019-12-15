@@ -1,12 +1,12 @@
-import React from "react"
-import styled from "styled-components"
-import Img from "gatsby-image"
-import { useStaticQuery, graphql, Link } from "gatsby"
+import React from 'react'
+import styled from 'styled-components'
+import Img from 'gatsby-image'
+import { useStaticQuery, graphql, Link } from 'gatsby'
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Layout from '../components/layout'
+import SEO from '../components/seo'
 
-import SuccessCaseMain from "../components/svg/successCaseMain"
+import SuccessCaseMain from '../components/svg/successCaseMain'
 
 export default () => {
   const data = useStaticQuery(graphql`

@@ -1,18 +1,16 @@
-import React from "react"
-import styled from "styled-components"
+import React from 'react'
+import styled from 'styled-components'
 
-import ScrollAnimation from "react-animate-on-scroll"
-import "animate.css/animate.min.css"
+import ScrollAnimation from 'react-animate-on-scroll'
+import 'animate.css/animate.min.css'
 
-import History from "./history"
+import History from './history'
 
-import Illustration from "../svg/about"
+import Illustration from '../svg/about'
 
 export default () => (
   <About>
-    <div className="text">
-      <h2>企业简介</h2>
-    </div>
+    <h2>企业简介</h2>
 
     <ScrollAnimation animateIn="fadeInUp" className="info" animateOnce>
       <div className="text">

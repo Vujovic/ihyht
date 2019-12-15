@@ -1,46 +1,46 @@
-import React from "react"
+import React from 'react'
 
-import { ProductsSm } from "../../templates/productsSm"
-import FeatureCard from "../../templates/featureCard"
+import { ProductsSm } from '../../templates/productsSm'
+import FeatureCard from '../../templates/featureCard'
 
-import Illustration from "./svg/4"
+import Illustration from './svg/4'
 
-import WebCrawler from "./svg/webCrawler"
-import RealTimeData from "./svg/realTimeData"
-import Computing from "./svg/computing"
-import Processing from "./svg/processing"
+import WebCrawler from './svg/webCrawler'
+import RealTimeData from './svg/realTimeData'
+import Computing from './svg/computing'
+import Processing from './svg/processing'
 
 const features = [
   {
     icon: <WebCrawler />,
-    title: "资产与服务",
+    title: '资产与服务',
     description:
-      "数据计量, 交换与共享, 信息资源目录, 数据地图, 数据发布中心, 主体关系中心, 感知微服务中心",
+      '数据计量, 交换与共享, 信息资源目录, 数据地图, 数据发布中心, 主体关系中心, 感知微服务中心',
   },
   {
     icon: <RealTimeData />,
-    title: "标准管理",
-    description: "数据元标准, 代码集标准, 指标标准, 维度标准, 数据归集标准",
+    title: '标准管理',
+    description: '数据元标准, 代码集标准, 指标标准, 维度标准, 数据归集标准',
   },
   {
     icon: <Computing />,
-    title: "流程管控",
-    description: "应用版本管控, 源端变更协同, 源端池化服务",
+    title: '流程管控',
+    description: '应用版本管控, 源端变更协同, 源端池化服务',
   },
   {
     icon: <Processing />,
-    title: "数据归集",
-    description: "主体标定识别, 主体属性圈选, 主体间关系定义, 问题数据打标",
+    title: '数据归集',
+    description: '主体标定识别, 主体属性圈选, 主体间关系定义, 问题数据打标',
   },
   {
     icon: <Processing />,
-    title: "数据质量",
-    description: "需求管理, 质量监控, 问题管理, 大数据智能诊疗",
+    title: '数据质量',
+    description: '需求管理, 质量监控, 问题管理, 大数据智能诊疗',
   },
   {
     icon: <Processing />,
-    title: "数据安全",
-    description: "数据分类分级, 数据安全控制, 数据安全审计, 数据脱敏",
+    title: '数据安全',
+    description: '数据分类分级, 数据安全控制, 数据安全审计, 数据脱敏',
   },
 ]
 
@@ -68,6 +68,7 @@ export default () => (
       <div className="cards">
         {features.map(card => (
           <FeatureCard
+            key={card.title}
             icon={card.icon}
             title={card.title}
             description={card.description}

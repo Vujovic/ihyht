@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled from 'styled-components'
 
 export const ServiceFeaturesCards = styled.div`
   margin: 150px 0;

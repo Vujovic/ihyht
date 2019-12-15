@@ -14,15 +14,16 @@ module.exports = {
       },
     },
     {
-      resolve: "gatsby-source-strapi",
+      resolve: 'gatsby-source-strapi',
       options: {
-        apiURL: "https://the-tulip.com",
+        apiURL: 'https://the-tulip.com',
         contentTypes: [
           // List of the Content Types you want to be able to request from Gatsby.
-          "news",
-          "partners",
-          "successcases",
-          "careers",
+          'news',
+          'partners',
+          'successcases',
+          'careers',
+          'productvideos',
         ],
         queryLimit: 1000,
       },

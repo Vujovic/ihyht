@@ -1,10 +1,10 @@
-import React from "react"
-import styled from "styled-components"
-import { useStaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
+import React from 'react'
+import styled from 'styled-components'
+import { useStaticQuery, graphql } from 'gatsby'
+import Img from 'gatsby-image'
 
-import AddressIcon from "./svg/address"
-import Illustration from "./svg/contact"
+import AddressIcon from './svg/address'
+import Illustration from './svg/contact'
 
 export default () => {
   const data = useStaticQuery(graphql`
@@ -65,7 +65,7 @@ export default () => {
               </div>
             </div>
           </div>
-          <Img draggable="false" fluid={data.branches.childImageSharp.fluid} />
+          <Img draggable={false} fluid={data.branches.childImageSharp.fluid} />
         </div>
       </Branches>
       <Form>
@@ -116,7 +116,7 @@ export default () => {
             <input
               name="_formsubmit_id"
               type="text"
-              style={{ display: "none" }}
+              style={{ display: 'none' }}
             />
             <input type="submit" id="submit" />
           </form>

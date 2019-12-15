@@ -1,8 +1,8 @@
-import React from "react"
+import React from 'react'
 
 export default () => (
   <svg
-    style={{ marginTop: "10px" }}
+    style={{ marginTop: '10px' }}
     width="77"
     height="74"
     viewBox="0 0 77 74"

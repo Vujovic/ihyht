@@ -1,4 +1,4 @@
-import React from "react"
+import React from 'react'
 
 export default () => (
   <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1077 695">
@@ -57,7 +57,7 @@ export default () => (
     <path
       d="M734 325l76-76h247M754 429l76-76h247M647 146l76-76h247M460 196l-75-76H137M336 332l-75-76H13M323 439l-75-76H0M529 126l-75-76H206"
       stroke="#2E83E6"
-      stroke-width="3"
+      strokeWidth="3"
     />
     <circle r="42" transform="matrix(-1 0 0 1 538 145)" fill="#4CB4A8" />
     <circle r="42" transform="matrix(-1 0 0 1 628 167)" fill="#646889" />
@@ -78,10 +78,10 @@ export default () => (
     <circle r="19" transform="matrix(-1 0 0 1 366 399)" fill="#2E83E6" />
     <text
       fill="#434343"
-      style={{ whiteSpace: "pre" }}
-      font-family="Noto Serif SC"
-      font-size="36"
-      letter-spacing="0em"
+      style={{ whiteSpace: 'pre' }}
+      fontFamily="Noto Serif SC"
+      fontSize="36"
+      letterSpacing="0em"
     >
       <tspan x="208" y="42">
         增值税专项分析
@@ -89,10 +89,10 @@ export default () => (
     </text>
     <text
       fill="#434343"
-      style={{ whiteSpace: "pre" }}
-      font-family="Noto Serif SC"
-      font-size="36"
-      letter-spacing="0em"
+      style={{ whiteSpace: 'pre' }}
+      fontFamily="Noto Serif SC"
+      fontSize="36"
+      letterSpacing="0em"
     >
       <tspan x="716" y="63">
         大企业专项分析
@@ -100,10 +100,10 @@ export default () => (
     </text>
     <text
       fill="#434343"
-      style={{ whiteSpace: "pre" }}
-      font-family="Noto Serif SC"
-      font-size="36"
-      letter-spacing="0em"
+      style={{ whiteSpace: 'pre' }}
+      fontFamily="Noto Serif SC"
+      fontSize="36"
+      letterSpacing="0em"
     >
       <tspan x="767" y="242">
         图表监控分析平台
@@ -111,10 +111,10 @@ export default () => (
     </text>
     <text
       fill="#434343"
-      style={{ whiteSpace: "pre" }}
-      font-family="Noto Serif SC"
-      font-size="36"
-      letter-spacing="0em"
+      style={{ whiteSpace: 'pre' }}
+      fontFamily="Noto Serif SC"
+      fontSize="36"
+      letterSpacing="0em"
     >
       <tspan x="861" y="344">
         统计分析平台
@@ -122,10 +122,10 @@ export default () => (
     </text>
     <text
       fill="#434343"
-      style={{ whiteSpace: "pre" }}
-      font-family="Noto Serif SC"
-      font-size="36"
-      letter-spacing="0em"
+      style={{ whiteSpace: 'pre' }}
+      fontFamily="Noto Serif SC"
+      fontSize="36"
+      letterSpacing="0em"
     >
       <tspan x="137" y="109">
         票流分析
@@ -133,10 +133,10 @@ export default () => (
     </text>
     <text
       fill="#434343"
-      style={{ whiteSpace: "pre" }}
-      font-family="Noto Serif SC"
-      font-size="36"
-      letter-spacing="0em"
+      style={{ whiteSpace: 'pre' }}
+      fontFamily="Noto Serif SC"
+      fontSize="36"
+      letterSpacing="0em"
     >
       <tspan x="13" y="242">
         稽查专项分析
@@ -144,10 +144,10 @@ export default () => (
     </text>
     <text
       fill="#434343"
-      style={{ whiteSpace: "pre" }}
-      font-family="Noto Serif SC"
-      font-size="36"
-      letter-spacing="0em"
+      style={{ whiteSpace: 'pre' }}
+      fontFamily="Noto Serif SC"
+      fontSize="36"
+      letterSpacing="0em"
     >
       <tspan x="0" y="353">
         移动分析中心

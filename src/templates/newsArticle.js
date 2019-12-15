@@ -1,10 +1,10 @@
-import React from "react"
-import ReactMarkdown from "react-markdown"
-import { graphql } from "gatsby"
-import styled from "styled-components"
+import React from 'react'
+import ReactMarkdown from 'react-markdown'
+import { graphql } from 'gatsby'
+import styled from 'styled-components'
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Layout from '../components/layout'
+import SEO from '../components/seo'
 
 export default props => {
   return (

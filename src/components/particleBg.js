@@ -1,6 +1,6 @@
-import React from "react"
+import React from 'react'
 
-import "../styles/particles.css"
+import '../styles/particles.css'
 
 export default () => (
   <div id="particle-container">

@@ -1,16 +1,16 @@
-import React from "react"
-import styled from "styled-components"
-import { Tab, Tabs, TabList, TabPanel } from "react-tabs"
+import React from 'react'
+import styled from 'styled-components'
+import { Tab, Tabs, TabList, TabPanel } from 'react-tabs'
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import { TabSection } from "./products"
+import Layout from '../components/layout'
+import SEO from '../components/seo'
+import { TabSection } from './products'
 
-import Illustration from "../components/svg/solutionsMain"
-import FeatureIcon1 from "../components/solutions/svg/1"
-import FeatureIcon2 from "../components/solutions/svg/2"
-import FeatureIcon3 from "../components/solutions/svg/3"
-import FeatureIcon4 from "../components/solutions/svg/4"
+import Illustration from '../components/svg/solutionsMain'
+import FeatureIcon1 from '../components/solutions/svg/1'
+import FeatureIcon2 from '../components/solutions/svg/2'
+import FeatureIcon3 from '../components/solutions/svg/3'
+import FeatureIcon4 from '../components/solutions/svg/4'
 
 export default () => (
   <Layout>
