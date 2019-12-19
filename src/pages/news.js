@@ -122,6 +122,9 @@ const NewsCenter = styled.section`
             opacity: 0.7;
           }
         }
+        img {
+          border-radius: 50%;
+        }
         h3 {
           padding-right: 5px;
         }

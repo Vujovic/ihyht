@@ -62,6 +62,7 @@ export default class Navigation extends React.Component {
             </li>
           </ul>
           <div className="icons">
+            <input type="search" aria-label="Search" />
             <button
               className="letter"
               onClick={this.handleModal}
