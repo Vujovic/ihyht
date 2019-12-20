@@ -16,7 +16,7 @@ export default () => {
           node {
             id
             title
-            Excerpt
+            post
             image {
               childImageSharp {
                 fixed {
@@ -50,7 +50,7 @@ export default () => {
               />
               <div className="description">
                 <h3>{edge.node.title}</h3>
-                <p>{edge.node.Excerpt}</p>
+                <p>{edge.node.post}</p>
               </div>
             </div>
           ))}
@@ -83,14 +83,20 @@ const SuccessCases = styled.section`
   }
 
   .cards {
-    margin-top: 75px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 75px auto 0 auto;
+    width: 90%;
     .card {
       box-shadow: 0 0 16px rgba(0, 0, 0, 0.15);
       display: flex;
+      flex-direction: column;
       align-items: center;
       margin: 20px;
-      min-width: 33%;
+      max-width: 25%;
       padding: 35px 20px;
+      text-align: center;
       .description {
         margin-left: 20px;
       }
@@ -102,7 +108,6 @@ const SuccessCases = styled.section`
       }
       p {
         margin-bottom: 30px;
-        max-width: 500px;
         text-align: justify;
       }
       a {
@@ -113,6 +118,14 @@ const SuccessCases = styled.section`
         :hover {
           background-color: #174f90;
         }
+      }
+    }
+  }
+
+  @media screen and (max-width: 1366px) {
+    .cards {
+      .card {
+        max-width: 40%;
       }
     }
   }
@@ -144,6 +157,14 @@ const SuccessCases = styled.section`
         a {
           padding: 10px 30px;
         }
+      }
+    }
+  }
+
+  @media screen and (max-width: 1366px) {
+    .cards {
+      .card {
+        max-width: 95%;
       }
     }
   }

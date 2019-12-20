@@ -42,9 +42,7 @@ Todo
 
 [ ] - integrate forms
 
-[ ] - add gatsby background image
-
-[ ] - integrate search
+[x] - add gatsby background image
 
 [x] - add nprogress
 
