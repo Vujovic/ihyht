@@ -178,11 +178,13 @@ export default () => {
           </div>
         </div>
       </ProductModule>
+      {/*
       <Video
         src={data.video1.video.publicURL}
         poster={data.video1.poster.childImageSharp.fluid.src}
         controls
       />
+      */}
     </ProductsSm>
   )
 }

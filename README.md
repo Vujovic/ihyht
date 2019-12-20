@@ -38,7 +38,7 @@ Todo
 
 [x] - letter icon for news
 
-[ ] - fix timeline align && add timeline to strapi
+[x] - fix timeline align && add timeline to strapi
 
 [ ] - integrate forms
 

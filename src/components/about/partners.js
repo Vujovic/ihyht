@@ -46,7 +46,7 @@ const Partners = styled.section`
   }
   .cards {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     flex-wrap: wrap;
     .card {
       box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);

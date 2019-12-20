@@ -74,14 +74,14 @@ export default () => {
           <Illustration />
           <form
             name="contact"
-            action="https://formsubmit.io/send/hello@njegos.dev"
+            action="https://formsubmit.io/send/web@ihyht.com"
             method="POST"
           >
             <input
               name="_redirect"
               type="hidden"
               id="name"
-              value="https://njegos.dev"
+              value="https://ihyht.com"
             ></input>
             <label>
               您的姓名 :
@@ -118,7 +118,7 @@ export default () => {
               type="text"
               style={{ display: 'none' }}
             />
-            <input type="submit" id="submit" />
+            <input type="submit" id="submit" value="提交" />
           </form>
         </div>
       </Form>

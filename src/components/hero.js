@@ -42,7 +42,7 @@ export default () => {
         />
       </div>
       <div className="text">
-        <h1>财税大数据产品与服务提供商</h1>
+        <h1>国内领先的财税大数据产品与服务提供商</h1>
         <h2>挖掘财税大数据价值，为政府决策、企业服务和金融风控科技赋能</h2>
         <div className="button">
           <button onClick={() => scrollTo('#introduction')}>

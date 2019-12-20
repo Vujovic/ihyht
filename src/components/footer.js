@@ -113,7 +113,16 @@ export default () => (
     <div className="copyright">
       <p>
         Copyright © 2016 - {new Date().getFullYear()} 北京华云慧通科技有限公司
-        All Rights Reserved | 京ICP备17004022 | 京公网安备 11010502033779
+        All Rights Reserved |{' '}
+        <a
+          href="http://beian.miit.gov.cn/"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{ color: '#fff' }}
+        >
+          京ICP备17004022
+        </a>{' '}
+        | 京公网安备 11010502033779
       </p>
       <Link to="/">
         <Logo />

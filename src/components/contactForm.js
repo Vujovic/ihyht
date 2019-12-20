@@ -47,7 +47,7 @@ export default () => (
         <textarea name="message" id="message" rows="3" required />
       </label>
       <input name="_formsubmit_id" type="text" style={{ display: 'none' }} />
-      <input type="submit" id="submit" value="发电子邮件" />
+      <input type="submit" id="submit" value="提交" />
     </form>
   </ContactForm>
 )
