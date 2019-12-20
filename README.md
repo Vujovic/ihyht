@@ -20,11 +20,9 @@ Todo
 
 [x] - finish footer page
 
-[ ] - add QR codes to footer
+[x] - add QR codes to footer
 
 [x] - update icons on hero (add details)
-
-[ ] - add success cases to gatsby-node
 
 [ ] - animate
 
@@ -64,4 +62,4 @@ Todo
 
 [x] - edit contact number
 
-[ ] - horizontal scroll for partners on mobile fix
+[x] - horizontal scroll for partners on mobile fix

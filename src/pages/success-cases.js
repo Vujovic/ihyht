@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import Img from 'gatsby-image'
-import { useStaticQuery, graphql, Link } from 'gatsby'
+import { useStaticQuery, graphql } from 'gatsby'
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
@@ -15,7 +15,6 @@ export default () => {
         edges {
           node {
             id
-            link
             title
             Excerpt
             image {
@@ -52,7 +51,6 @@ export default () => {
               <div className="description">
                 <h3>{edge.node.title}</h3>
                 <p>{edge.node.Excerpt}</p>
-                <Link to={edge.node.link}>Read more</Link>
               </div>
             </div>
           ))}
@@ -85,19 +83,17 @@ const SuccessCases = styled.section`
   }
 
   .cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
     margin-top: 75px;
     .card {
       box-shadow: 0 0 16px rgba(0, 0, 0, 0.15);
       display: flex;
-      flex-direction: column;
       align-items: center;
-      justify-content: space-between;
+      margin: 20px;
       min-width: 33%;
       padding: 35px 20px;
-      text-align: center;
+      .description {
+        margin-left: 20px;
+      }
       > * {
         margin: 20px 0;
       }

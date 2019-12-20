@@ -7,7 +7,6 @@ import Contact from './contact'
 
 import Logo from './svg/logo'
 import ContactIcon from './svg/contact'
-import search from '../images/search.png'
 
 import '../styles/hamburger.css'
 
@@ -62,7 +61,6 @@ export default class Navigation extends React.Component {
             </li>
           </ul>
           <div className="icons">
-            <input type="search" aria-label="Search" />
             <button
               className="letter"
               onClick={this.handleModal}
@@ -149,27 +147,6 @@ const Nav = styled.nav`
       align-items: center;
       justify-content: center;
       margin-left: 40px;
-      input {
-        background: #3379e0 url(${search}) no-repeat 10px center;
-        border: none;
-        border-radius: 50px;
-        color: rgba(255, 255, 255, 0);
-        cursor: pointer;
-        padding: 6px 0;
-        font-size: 18px;
-        transition: all 0.5s;
-        width: 40px;
-        :hover {
-          transform: scale(1.2);
-        }
-        :focus {
-          color: #fff;
-          cursor: auto;
-          padding-left: 40px;
-          transform: scale(1);
-          width: 250px;
-        }
-      }
       .letter {
         background-color: transparent;
         border: none;
