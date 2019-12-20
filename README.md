@@ -1,4 +1,4 @@
-v0.94
+v0.97
 
 Todo
 
@@ -40,7 +40,7 @@ Todo
 
 [x] - fix timeline align && add timeline to strapi
 
-[ ] - integrate forms
+[x] - integrate forms
 
 [x] - add gatsby background image
 
@@ -54,7 +54,7 @@ Todo
 
 [ ] - form redirect to homepage
 
-[ ] - change email for contact
+[x] - change email for contact
 
 [x] - add Date js to footer year
 

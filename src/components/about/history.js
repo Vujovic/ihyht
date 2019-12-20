@@ -5,7 +5,7 @@ import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from 'react-vertical-timeline-component'
-import 'react-vertical-timeline-component/style.min.css'
+import '../../styles/timeline.css'
 
 import FoundedIcon from './svg/1'
 import Partnership from './svg/2'
