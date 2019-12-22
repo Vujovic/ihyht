@@ -28,70 +28,70 @@ export default () => (
         date="2018.12"
         icon={<Shangdong />}
       >
-        <h1>山东税务大数据平台</h1>
+        <h1>中标山东省税务局大数据平台建设项目</h1>
       </VerticalTimelineElement>
       <VerticalTimelineElement
         className="vertical-timeline-element--work"
         date="2018.10"
         icon={<BigData />}
       >
-        <h1>浙江税务 大数据</h1>
+        <h1>中标浙江省税务局大数据平台建设项目</h1>
       </VerticalTimelineElement>
       <VerticalTimelineElement
         className="vertical-timeline-element--work"
         date="2018.06"
         icon={<Algorithm />}
       >
-        <h1>税务智能算法发布</h1>
+        <h1>公司税务智能算法体系发布</h1>
       </VerticalTimelineElement>
       <VerticalTimelineElement
         className="vertical-timeline-element--work"
         date="2018.05"
         icon={<ProvinceTax />}
       >
-        <h1>山东国税实名办税全省上线</h1>
+        <h1>山东省税务局实名办税系统全省上线</h1>
       </VerticalTimelineElement>
       <VerticalTimelineElement
         className="vertical-timeline-element--work"
         date="2018.02"
         icon={<BigDataAlliance />}
       >
-        <h1>广东税务大数据创新应用</h1>
+        <h1>全面推进广东省税务局税务大数据创新应用</h1>
       </VerticalTimelineElement>
       <VerticalTimelineElement
         className="vertical-timeline-element--work"
         date="2017.10"
         icon={<Transport />}
       >
-        <h1>交通委ETC电子发票云平台</h1>
+        <h1>中标交通部ETC电子发票云平台建设项目</h1>
       </VerticalTimelineElement>
       <VerticalTimelineElement
         className="vertical-timeline-element--work"
         date="2017.05"
         icon={<DataAlliance />}
       >
-        <h1>中关村大数据产业联盟</h1>
+        <h1>加入中关村大数据产业联盟</h1>
       </VerticalTimelineElement>
       <VerticalTimelineElement
         className="vertical-timeline-element--work"
         date="2017.01"
         icon={<Tax />}
       >
-        <h1>广东税务大数据平台</h1>
+        <h1>中标广东省国家税务局大数据平台建设项目</h1>
       </VerticalTimelineElement>
       <VerticalTimelineElement
         className="vertical-timeline-element--work"
         date="2016.12"
         icon={<Cloud />}
       >
-        <h1>广东国税电子税局云平台</h1>
+        <h1>中标广东省国家税务局电子税务局云平台建设项目</h1>
       </VerticalTimelineElement>
       <VerticalTimelineElement
         className="vertical-timeline-element--work"
         date="2016.09"
         icon={<Partnership />}
       >
-        <h1>与阿里战略合作</h1>
+        <h1>公司与阿里云建立战略合作伙伴关系</h1>
       </VerticalTimelineElement>
       <VerticalTimelineElement
         className="vertical-timeline-element--work"

@@ -145,6 +145,9 @@ const NewsCenter = styled.section`
         padding: 0;
         width: 95%;
       }
+      svg {
+        max-width: 90%;
+      }
       .news {
         width: 100%;
         .post {
