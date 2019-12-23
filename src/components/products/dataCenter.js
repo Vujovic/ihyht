@@ -12,6 +12,7 @@ import RealTimeData from './svg/realTimeData'
 import Computing from './svg/computing'
 import Processing from './svg/processing'
 import Check from '../svg/check'
+import { DataArchitecture } from './svg/productFeatures'
 
 const features = [
   {
@@ -36,7 +37,7 @@ const features = [
   },
   {
     key: 5,
-    icon: <WebCrawler />,
+    icon: <DataArchitecture />,
     description:
       '通过标准数据模型解决架构设计和数据开发的不一致性, 实现了模型分层和统一开发规范',
   },
@@ -49,6 +50,8 @@ const features = [
 ]
 
 export default () => {
+  {
+    /*
   const data = useStaticQuery(graphql`
     query GetVideo1 {
       video1: strapiProductvideos(id: { eq: "Productvideos_1" }) {
@@ -65,6 +68,8 @@ export default () => {
       }
     }
   `)
+  */
+  }
 
   return (
     <ProductsSm>

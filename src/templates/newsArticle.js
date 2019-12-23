@@ -12,7 +12,7 @@ export default props => {
       <SEO title={props.data.title} />
       <NewsArticle>
         <ReactMarkdown
-          source={props.data.strapiNews.newsArticle}
+          source={props.data.strapiNews.NewsArticle}
           escapeHtml={false}
         />
       </NewsArticle>
@@ -22,10 +22,10 @@ export default props => {
 
 export const NewsQuery = graphql`
   query getNewsArticle($link: String!) {
-    strapiNews(link: { eq: $link }) {
-      newsArticle
-      title
-      link
+    strapiNews(Link: { eq: $link }) {
+      NewsArticle
+      Title
+      Link
     }
   }
 `

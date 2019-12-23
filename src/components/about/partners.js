@@ -10,8 +10,7 @@ export default () => {
         edges {
           node {
             id
-            name
-            images {
+            Images {
               childImageSharp {
                 fixed(quality: 90, width: 200, height: 200) {
                   ...GatsbyImageSharpFixed_withWebp_tracedSVG
@@ -29,7 +28,7 @@ export default () => {
       <div className="cards">
         {data.allStrapiPartners.edges.map(card => (
           <div className="card" key={card.node.id}>
-            <Img fixed={card.node.images.childImageSharp.fixed} />
+            <Img fixed={card.node.Images.childImageSharp.fixed} />
           </div>
         ))}
       </div>

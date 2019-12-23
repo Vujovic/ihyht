@@ -16,7 +16,7 @@ module.exports = {
     {
       resolve: 'gatsby-source-strapi',
       options: {
-        apiURL: 'https://the-tulip.com',
+        apiURL: 'http://58.59.7.151:1337',
         contentTypes: [
           // List of the Content Types you want to be able to request from Gatsby.
           'news',

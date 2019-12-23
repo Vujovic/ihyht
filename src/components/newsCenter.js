@@ -11,15 +11,15 @@ import NewsIcon from './svg/newsIcon'
 export default () => {
   const data = useStaticQuery(graphql`
     query getNews {
-      allStrapiNews(limit: 4, sort: { order: DESC, fields: [date] }) {
+      allStrapiNews(limit: 4, sort: { order: DESC, fields: [Date] }) {
         edges {
           node {
             id
-            title
-            publisher
-            date(formatString: "YYYY-M-D")
-            link
-            thumbnail {
+            Title
+            Publisher
+            Date(formatString: "YYYY-M-D")
+            Link
+            Thumbnail {
               childImageSharp {
                 fixed(quality: 90, width: 100, height: 100) {
                   ...GatsbyImageSharpFixed_withWebp_tracedSVG
@@ -54,14 +54,14 @@ export default () => {
                 <div className="text-block">
                   <NewsIcon />
                   <div className="description">
-                    <h3>{edge.node.title}</h3>
-                    <p>{edge.node.date}</p>
-                    <Link to={edge.node.link}>Read more</Link>
+                    <h3>{edge.node.Ttle}</h3>
+                    <p>{edge.node.Date}</p>
+                    <Link to={edge.node.Link}>Read more</Link>
                   </div>
                 </div>
 
                 <Img
-                  fixed={edge.node.thumbnail.childImageSharp.fixed}
+                  fixed={edge.node.Thumbnail.childImageSharp.fixed}
                   draggable={false}
                 />
               </ScrollAnimation>

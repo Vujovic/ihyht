@@ -7,8 +7,8 @@ exports.createPages = ({ graphql, actions }) => {
         allStrapiNews {
           edges {
             node {
-              link
-              title
+              Link
+              Title
             }
           }
         }
@@ -16,11 +16,11 @@ exports.createPages = ({ graphql, actions }) => {
     `).then(results => {
       results.data.allStrapiNews.edges.forEach(edge => {
         actions.createPage({
-          path: edge.node.link,
+          path: edge.node.Link,
           component: path.resolve('./src/templates/newsArticle.js'),
           context: {
-            link: edge.node.link,
-            title: edge.node.title,
+            link: edge.node.Link,
+            title: edge.node.Title,
           },
         })
       })

@@ -15,9 +15,9 @@ export default () => {
         edges {
           node {
             id
-            title
-            post
-            image {
+            Title
+            Post
+            Image {
               childImageSharp {
                 fixed {
                   ...GatsbyImageSharpFixed_withWebp_tracedSVG
@@ -45,12 +45,12 @@ export default () => {
           {data.allStrapiSuccesscases.edges.map(edge => (
             <div className="card" key={edge.node.id}>
               <Img
-                fixed={edge.node.image.childImageSharp.fixed}
+                fixed={edge.node.Image.childImageSharp.fixed}
                 draggable={false}
               />
               <div className="description">
-                <h3>{edge.node.title}</h3>
-                <p>{edge.node.post}</p>
+                <h3>{edge.node.Title}</h3>
+                <p>{edge.node.Post}</p>
               </div>
             </div>
           ))}

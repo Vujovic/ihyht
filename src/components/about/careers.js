@@ -10,13 +10,13 @@ export default () => {
         edges {
           node {
             id
-            positionName
-            jobCategory
+            PositionName
+            JobCategory
             Location
-            postDate(formatString: "YYYY/MM/DD")
+            PostDate(formatString: "YYYY/MM/DD")
             Education
             Experience
-            jobDescription
+            JobDescription
           }
         }
       }
@@ -38,10 +38,10 @@ export default () => {
             <input id={edge.node.id} className="toggle" type="checkbox" />
             <label htmlFor={edge.node.id} className="lbl-toggle">
               <ul>
-                <li>{edge.node.positionName}</li>
-                <li>{edge.node.jobCategory}</li>
+                <li>{edge.node.PositionName}</li>
+                <li>{edge.node.JobCategory}</li>
                 <li>{edge.node.Location}</li>
-                <li>{edge.node.postDate}</li>
+                <li>{edge.node.PostDate}</li>
               </ul>
             </label>
             <div className="description">
@@ -49,7 +49,7 @@ export default () => {
                 <h3>学历: {edge.node.Education}</h3>
                 <h3>本科: {edge.node.Experience}</h3>
                 <ReactMarkdown
-                  source={edge.node.jobDescription}
+                  source={edge.node.JobDescription}
                   escapeHtml={false}
                 />
                 <a href="mailto:web@ihyht.com">申请职位</a>
