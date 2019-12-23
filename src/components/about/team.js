@@ -8,13 +8,6 @@ import Check from '../svg/check'
 export default () => {
   const data = useStaticQuery(graphql`
     query GetTeamImages {
-      ceo: file(relativePath: { eq: "team/ceo.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 512, quality: 100) {
-            ...GatsbyImageSharpFluid_withWebp_tracedSVG
-          }
-        }
-      }
       cto: file(relativePath: { eq: "team/cto.png" }) {
         childImageSharp {
           fluid(maxWidth: 512, quality: 100) {
@@ -36,25 +29,26 @@ export default () => {
           }
         }
       }
+      sales: file(relativePath: { eq: "team/sales.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 512, quality: 100) {
+            ...GatsbyImageSharpFluid_withWebp_tracedSVG
+          }
+        }
+      }
+      pdl: file(relativePath: { eq: "team/pdl.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 512, quality: 100) {
+            ...GatsbyImageSharpFluid_withWebp_tracedSVG
+          }
+        }
+      }
     }
   `)
   return (
     <Team>
       <h2>管理团队</h2>
       <div className="team-cards">
-        <div className="card">
-          <div className="image">
-            <Img fluid={data.ceo.childImageSharp.fluid} />
-          </div>
-          <h2>任伟</h2>
-          <h3>CEO</h3>
-          <p>
-            <Check /> 商务资源丰富，BD能力卓越
-          </p>
-          <p>
-            <Check /> 曾作为联合创始人及第2大股东缔造一家年营收超10亿元的公司
-          </p>
-        </div>
         <div className="card">
           <div className="image">
             <Img fluid={data.cto.childImageSharp.fluid} />
@@ -107,6 +101,36 @@ export default () => {
             首席数据官联盟创始人，提任博雅大数据研究院副主任委员等众多大数据联盟专家委员
           </p>
         </div>
+        <div className="card">
+          <div className="image">
+            <Img fluid={data.sales.childImageSharp.fluid} />
+          </div>
+          <h2>礼群</h2>
+          <h3>财税事业部销售负责人</h3>
+          <p>
+            <Check /> 20年IT营销管理经验
+          </p>
+          <p>
+            <Check /> 曾任日冲商业（中国）有
+            限公司销售部总经理、中国软件税务本部市场总经理，
+            北京世纪畅想公司副总经理等职务
+          </p>
+        </div>
+        <div className="card">
+          <div className="image">
+            <Img fluid={data.pdl.childImageSharp.fluid} />
+          </div>
+          <h2>田明涛</h2>
+          <h3>项目交付负责人</h3>
+          <p>
+            <Check /> 20年IT行业经验
+          </p>
+          <p>
+            <Check />
+            曾任中创等上市公司架构师、技术总监、高级总监。精通大数据、微服务、区块链；熟悉税务、政府等行业，
+            主导众多大型政务应用工程的建设工作
+          </p>
+        </div>
       </div>
     </Team>
   )
@@ -144,6 +168,13 @@ const Team = styled.section`
         svg {
           width: 18px;
         }
+      }
+    }
+  }
+  @media screen and (max-width: 1366px) {
+    .team-cards {
+      .card {
+        width: 350px;
       }
     }
   }
