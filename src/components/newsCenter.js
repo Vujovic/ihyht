@@ -54,7 +54,7 @@ export default () => {
                 <div className="text-block">
                   <NewsIcon />
                   <div className="description">
-                    <h3>{edge.node.Ttle}</h3>
+                    <h3>{edge.node.Title}</h3>
                     <p>{edge.node.Date}</p>
                     <Link to={edge.node.Link}>Read more</Link>
                   </div>

@@ -249,6 +249,15 @@ const Services = styled.section`
     display: flex;
     justify-content: space-around;
     margin-top: 75px;
+    .card {
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+      border-radius: 20px;
+      margin: 10px auto;
+      padding: 20px 50px;
+      li {
+        min-width: 136px;
+      }
+    }
   }
   @media screen and (max-width: 1280px) {
     .cards {
