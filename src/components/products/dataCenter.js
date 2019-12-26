@@ -1,51 +1,58 @@
 import React from 'react'
 import styled from 'styled-components'
 import { useStaticQuery, graphql } from 'gatsby'
+import ScrollAnimation from 'react-animate-on-scroll'
+import 'animate.css/animate.min.css'
 
 import { ProductsSm } from '../../templates/productsSm'
 import FeatureCard from '../../templates/featureCard'
 
 import Illustration from './svg/5'
 // Icons
-import WebCrawler from './svg/webCrawler'
 import RealTimeData from './svg/realTimeData'
 import Computing from './svg/computing'
 import Processing from './svg/processing'
 import Check from '../svg/check'
-import { DataArchitecture } from './svg/productFeatures'
+import { DataResearch, DataArchitecture, Labeling } from './svg/productFeatures'
 
 const features = [
   {
     key: 1,
-    icon: <WebCrawler />,
+    icon: <DataResearch />,
     description: '用全量数据来引导科学决策, 防止过失和偏差',
+    delay: 0,
   },
   {
     key: 2,
     icon: <RealTimeData />,
     description: '催生AI服务应用, 为AI提供全量数据, 支持数据创新和业务创新',
+    delay: 100,
   },
   {
     key: 3,
     icon: <Computing />,
     description: '赋能数据服务思维, 运营数据化, 智能化',
+    delay: 200,
   },
   {
     key: 4,
     icon: <Processing />,
     description: `盘点数据资源, 将所有数据资源进行完整呈现, 并通过元数据信息收集, 数据血缘探查, 数据权限申请授权等手段, 解决"有哪些数据可用", "到哪里可以找到数据"的难题, 提升数据资源的利用率`,
+    delay: 300,
   },
   {
     key: 5,
     icon: <DataArchitecture />,
     description:
       '通过标准数据模型解决架构设计和数据开发的不一致性, 实现了模型分层和统一开发规范',
+    delay: 400,
   },
   {
     key: 6,
-    icon: <WebCrawler />,
+    icon: <Labeling />,
     description:
       '构建标签体系, 对各主题域进行标签赋能, 将其特征数字化, 为后续进行精准分析和用户画像提供必要条件',
+    delay: 500,
   },
 ]
 
@@ -94,11 +101,19 @@ export default () => {
         <h3>产品功能</h3>
         <div className="cards">
           {features.map(card => (
-            <FeatureCard
-              key={card.key}
-              icon={card.icon}
-              description={card.description}
-            />
+            <ScrollAnimation
+              offset={50}
+              animateIn="fadeInUp"
+              animateOnce
+              delay={card.delay}
+              style={{ minWidth: '25%' }}
+            >
+              <FeatureCard
+                key={card.key}
+                icon={card.icon}
+                description={card.description}
+              />
+            </ScrollAnimation>
           ))}
         </div>
       </div>

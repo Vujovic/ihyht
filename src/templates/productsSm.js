@@ -30,6 +30,9 @@ export const ProductsSm = styled.section`
   }
   .features {
     margin-top: 75px;
+    p {
+      text-align: center;
+    }
     .cards {
       display: flex;
       flex-wrap: wrap;

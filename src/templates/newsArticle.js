@@ -60,7 +60,7 @@ const NewsArticle = styled.section`
       margin: 5px;
       img {
         border-radius: 0 50px;
-        height: 600px;
+        max-height: 600px;
         margin: 5px;
         vertical-align: top;
       }

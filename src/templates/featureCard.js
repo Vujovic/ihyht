@@ -11,7 +11,6 @@ export default props => (
 
 const Card = styled.div`
   margin: 20px;
-  min-width: 20%;
   h4 {
     font-size: 18px;
     margin-top: 25px;
