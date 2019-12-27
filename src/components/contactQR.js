@@ -58,6 +58,7 @@ const ContactQR = styled.div`
       font-size: 18px;
       padding: 5px;
       svg {
+        height: 25px;
         width: 25px;
       }
     }

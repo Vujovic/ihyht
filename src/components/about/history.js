@@ -18,11 +18,40 @@ import ProvinceTax from './svg/8'
 import Algorithm from './svg/9'
 import BigData from './svg/10'
 import Shangdong from './svg/11'
+import BigDataLab from './svg/15'
 
 export default () => (
   <History>
     <h2>公司历史</h2>
     <VerticalTimeline>
+      <VerticalTimelineElement
+        className="vertical-timeline-element--work"
+        date="2019.12"
+        icon={<BigDataLab />}
+      >
+        <h1>公司与中央财经大学共建"财税大数据实验室"</h1>
+      </VerticalTimelineElement>
+      <VerticalTimelineElement
+        className="vertical-timeline-element--work"
+        date="2019.10"
+        icon={<Partnership />}
+      >
+        <h1>公司与上海国家会计学院建立战略合作伙伴关系</h1>
+      </VerticalTimelineElement>
+      <VerticalTimelineElement
+        className="vertical-timeline-element--work"
+        date="2019.09"
+        icon={<Partnership />}
+      >
+        <h1>公司与长城信息金融建立战略合作伙伴关系</h1>
+      </VerticalTimelineElement>
+      <VerticalTimelineElement
+        className="vertical-timeline-element--work"
+        date="2019.08"
+        icon={<Partnership />}
+      >
+        <h1>公司与蚂蚁金服建立战略合作伙伴关系</h1>
+      </VerticalTimelineElement>
       <VerticalTimelineElement
         className="vertical-timeline-element--work"
         date="2018.12"

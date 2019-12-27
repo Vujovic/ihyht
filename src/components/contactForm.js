@@ -56,8 +56,8 @@ const ContactForm = styled.div`
   animation: 1s slideLeft;
   background-color: #fff;
   box-shadow: 0 0 16px rgba(0, 0, 0, 0.15);
-  margin-right: 100px;
-  max-width: 960px;
+  margin-top: 40px;
+  margin-bottom: 40px;
   padding: 20px 0;
   h2 {
     padding: 0 50px 0 200px;

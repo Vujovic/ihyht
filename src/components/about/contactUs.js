@@ -51,17 +51,17 @@ export default () => {
             <div className="branch">
               <AddressIcon />
               <div className="text">
-                <h3>北京华云慧通科技有限公司武汉分公司</h3>
-                <p>武汉市洪山区欢乐大道1号德成国贸中心B座1406室</p>
-                <p>027-87828198</p>
+                <h3>北京华云慧通科技有限公司杭州分公司</h3>
+                <p>浙江省杭州市西湖区中田大厦11F-D</p>
+                <p>0571-86726509</p>
               </div>
             </div>
             <div className="branch">
               <AddressIcon />
               <div className="text">
-                <h3>北京华云慧通科技有限公司杭州分公司</h3>
-                <p>浙江省杭州市西湖区中田大厦11F-D</p>
-                <p>0571-86726509</p>
+                <h3>北京华云慧通科技有限公司武汉分公司</h3>
+                <p>武汉市洪山区欢乐大道1号德成国贸中心B座1406室</p>
+                <p>027-87828198</p>
               </div>
             </div>
           </div>
