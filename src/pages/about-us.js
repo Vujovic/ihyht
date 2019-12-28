@@ -19,7 +19,7 @@ export default () => (
     <Hero>
       <div className="text">
         <h1>关于我们</h1>
-        <p>国内领先的财税大数据产品与服务提供商</p>
+        <p>中国领先的财税大数据资产管理与运营服务机构</p>
       </div>
       <Illustration />
     </Hero>

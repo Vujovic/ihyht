@@ -1,64 +1,52 @@
 import React from 'react'
 import styled from 'styled-components'
-import Img from 'gatsby-image'
-import { useStaticQuery, graphql } from 'gatsby'
+import { Tab, Tabs, TabList, TabPanel } from 'react-tabs'
+import ScrollAnimation from 'react-animate-on-scroll'
+import 'animate.css/animate.min.css'
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
+import { TabSection } from './products'
+
+import Shangdong from '../components/successcases/shangdong'
 
 import SuccessCaseMain from '../components/svg/successCaseMain'
 
-export default () => {
-  const data = useStaticQuery(graphql`
-    query GetSuccessCases {
-      allStrapiSuccesscases {
-        edges {
-          node {
-            id
-            Title
-            Post
-            Image {
-              childImageSharp {
-                fixed {
-                  ...GatsbyImageSharpFixed_withWebp_tracedSVG
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  `)
+export default () => (
+  <Layout>
+    <SEO title="成功案例" />
+    <SuccessCases>
+      <div className="hero">
+        <div className="text">
+          <h1>成功案例</h1>
+          <p>数字经济下领先财税大数据资产管理和运营服务提供商成功故事</p>
+        </div>
+        <SuccessCaseMain />
+      </div>
+      <TabSection>
+        <Tabs>
+          <ScrollAnimation offset={50} animateIn="fadeInUp" animateOnce>
+            <TabList>
+              <Tab>广东省国家税务局</Tab>
+              <Tab>山东省国家税务局</Tab>
+              <Tab>吉林省国家税务局</Tab>
+              <Tab>浙江省国家税务局</Tab>
+              <Tab>电子发票服务系统</Tab>
+            </TabList>
+          </ScrollAnimation>
 
-  return (
-    <Layout>
-      <SEO title="成功案例" />
-      <SuccessCases>
-        <div className="hero">
-          <div className="text">
-            <h1>成功案例</h1>
-            <p>数字经济下领先财税大数据资产管理和运营服务提供商成功故事</p>
-          </div>
-          <SuccessCaseMain />
-        </div>
-        <div className="cards">
-          {data.allStrapiSuccesscases.edges.map(edge => (
-            <div className="card" key={edge.node.id}>
-              <Img
-                fixed={edge.node.Image.childImageSharp.fixed}
-                draggable={false}
-              />
-              <div className="description">
-                <h3>{edge.node.Title}</h3>
-                <p>{edge.node.Post}</p>
-              </div>
-            </div>
-          ))}
-        </div>
-      </SuccessCases>
-    </Layout>
-  )
-}
+          <TabPanel>Hi</TabPanel>
+          <TabPanel>
+            <Shangdong />
+          </TabPanel>
+          <TabPanel>Hi</TabPanel>
+          <TabPanel>Hi</TabPanel>
+          <TabPanel>Hi</TabPanel>
+        </Tabs>
+      </TabSection>
+    </SuccessCases>
+  </Layout>
+)
 
 const SuccessCases = styled.section`
   .hero {
@@ -82,54 +70,6 @@ const SuccessCases = styled.section`
     }
   }
 
-  .cards {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    margin: 75px auto 0 auto;
-    width: 90%;
-    .card {
-      box-shadow: 0 0 16px rgba(0, 0, 0, 0.15);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin: 20px;
-      max-width: 25%;
-      padding: 35px 20px;
-      text-align: center;
-      .description {
-        margin-left: 20px;
-      }
-      > * {
-        margin: 20px 0;
-      }
-      h3 {
-        margin-bottom: 30px;
-      }
-      p {
-        margin-bottom: 30px;
-        text-align: justify;
-      }
-      a {
-        background-color: #3379e0;
-        border-radius: 100px;
-        color: #fff;
-        padding: 10px 100px;
-        :hover {
-          background-color: #174f90;
-        }
-      }
-    }
-  }
-
-  @media screen and (max-width: 1366px) {
-    .cards {
-      .card {
-        max-width: 40%;
-      }
-    }
-  }
-
   @media screen and (max-width: 1024px) {
     .hero {
       flex-direction: column-reverse;
@@ -141,31 +81,4 @@ const SuccessCases = styled.section`
         width: 75%;
       }
     }
-
-    .cards {
-      .card {
-        margin: 25px;
-        padding: 0;
-        width: 85%;
-        .gatsby-image-wrapper {
-          margin: 0 !important;
-          width: 100% !important;
-        }
-        p {
-          padding: 0 20px;
-        }
-        a {
-          padding: 10px 30px;
-        }
-      }
-    }
-  }
-
-  @media screen and (max-width: 1366px) {
-    .cards {
-      .card {
-        max-width: 95%;
-      }
-    }
-  }
 `
