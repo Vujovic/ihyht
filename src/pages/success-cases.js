@@ -10,6 +10,8 @@ import { TabSection } from './products'
 
 import Shangdong from '../components/successcases/shangdong'
 
+import Zhejiang from '../components/successcases/zhejiang'
+
 import SuccessCaseMain from '../components/svg/successCaseMain'
 
 export default () => (
@@ -40,7 +42,9 @@ export default () => (
             <Shangdong />
           </TabPanel>
           <TabPanel>Hi</TabPanel>
-          <TabPanel>Hi</TabPanel>
+          <TabPanel>
+            <Zhejiang />
+          </TabPanel>
           <TabPanel>Hi</TabPanel>
         </Tabs>
       </TabSection>
