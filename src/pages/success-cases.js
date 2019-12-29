@@ -8,8 +8,8 @@ import Layout from '../components/layout'
 import SEO from '../components/seo'
 import { TabSection } from './products'
 
+import Guangdong from '../components/successcases/guangdong'
 import Shangdong from '../components/successcases/shangdong'
-
 import Zhejiang from '../components/successcases/zhejiang'
 
 import SuccessCaseMain from '../components/svg/successCaseMain'
@@ -31,21 +31,19 @@ export default () => (
             <TabList>
               <Tab>广东省国家税务局</Tab>
               <Tab>山东省国家税务局</Tab>
-              <Tab>吉林省国家税务局</Tab>
               <Tab>浙江省国家税务局</Tab>
-              <Tab>电子发票服务系统</Tab>
             </TabList>
           </ScrollAnimation>
 
-          <TabPanel>Hi</TabPanel>
+          <TabPanel>
+            <Guangdong />
+          </TabPanel>
           <TabPanel>
             <Shangdong />
           </TabPanel>
-          <TabPanel>Hi</TabPanel>
           <TabPanel>
             <Zhejiang />
           </TabPanel>
-          <TabPanel>Hi</TabPanel>
         </Tabs>
       </TabSection>
     </SuccessCases>
