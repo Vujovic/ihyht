@@ -7,8 +7,9 @@ export default () => (
     <h3>项目信息</h3>
     <form
       name="contact"
-      action="http://58.59.7.151:4545/send-email"
+      action="mailto:web@ihyht.com"
       method="POST"
+      enctype="text/plain"
     >
       <label>
         您的姓名 :

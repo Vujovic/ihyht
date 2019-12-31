@@ -74,8 +74,9 @@ export default () => {
           <Illustration />
           <form
             name="contact"
-            action="http://58.59.7.151:4545/send-email"
-            method="POST"
+            action="mailto:web@ihyht.com"
+            method="GET"
+            enctype="text/plain"
           >
             <label>
               您的姓名 :
