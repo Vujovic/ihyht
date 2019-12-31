@@ -6,6 +6,7 @@ import 'animate.css/animate.min.css'
 
 import { ProductsSm } from '../../templates/productsSm'
 import FeatureCard from '../../templates/featureCard'
+import { UseCase, Image } from './dataCollection'
 
 import Illustration from './svg/5'
 // Icons
@@ -57,26 +58,17 @@ const features = [
 ]
 
 export default () => {
-  {
-    /*
   const data = useStaticQuery(graphql`
-    query GetVideo1 {
-      video1: strapiProductvideos(id: { eq: "Productvideos_1" }) {
-        video {
-          publicURL
-        }
-        poster {
-          childImageSharp {
-            fluid {
-              src
-            }
+    query getDataCenter {
+      dataCollection: file(relativePath: { eq: "datacenter.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 1280, quality: 100) {
+            ...GatsbyImageSharpFluid_withWebp_tracedSVG
           }
         }
       }
     }
   `)
-  */
-  }
 
   return (
     <ProductsSm>
@@ -198,6 +190,13 @@ export default () => {
           </div>
         </div>
       </ProductModule>
+      <UseCase>
+        <h3>产品用例</h3>
+        <Image
+          draggable={false}
+          fluid={data.dataCollection.childImageSharp.fluid}
+        />
+      </UseCase>
       {/*
       <Video
         src={data.video1.video.publicURL}

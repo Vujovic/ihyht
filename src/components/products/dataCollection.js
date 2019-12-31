@@ -94,12 +94,12 @@ export default () => {
   )
 }
 
-const UseCase = styled.div`
+export const UseCase = styled.div`
   h3 {
     margin-top: 75px;
   }
 `
-const Image = styled(Img)`
+export const Image = styled(Img)`
   margin: 75px auto;
   max-width: 60%;
 `
