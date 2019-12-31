@@ -29,9 +29,9 @@ export default () => (
         <Tabs>
           <ScrollAnimation offset={50} animateIn="fadeInUp" animateOnce>
             <TabList>
-              <Tab>广东省国家税务局</Tab>
-              <Tab>山东省国家税务局</Tab>
-              <Tab>浙江省国家税务局</Tab>
+              <Tab>广东省</Tab>
+              <Tab>山东省</Tab>
+              <Tab>浙江省</Tab>
             </TabList>
           </ScrollAnimation>
 

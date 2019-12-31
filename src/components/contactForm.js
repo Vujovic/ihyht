@@ -7,15 +7,9 @@ export default () => (
     <h3>项目信息</h3>
     <form
       name="contact"
-      action="https://formsubmit.io/send/hello@njegos.dev"
+      action="http://58.59.7.151:4545/send-email"
       method="POST"
     >
-      <input
-        name="_redirect"
-        type="hidden"
-        id="name"
-        value="https://njegos.dev"
-      ></input>
       <label>
         您的姓名 :
         <input type="text" id="name" name="name" required />
@@ -46,7 +40,6 @@ export default () => (
         留言信息
         <textarea name="message" id="message" rows="3" required />
       </label>
-      <input name="_formsubmit_id" type="text" style={{ display: 'none' }} />
       <input type="submit" id="submit" value="提交" />
     </form>
   </ContactForm>

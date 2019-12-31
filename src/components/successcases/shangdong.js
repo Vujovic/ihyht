@@ -1,5 +1,4 @@
 import React from 'react'
-import styled from 'styled-components'
 import { useStaticQuery, graphql } from 'gatsby'
 
 import Illustration from './svg/shangdongIllustration'
@@ -47,6 +46,7 @@ export default () => {
               </Scroll>
             )
           }
+          return null
         })}
       </div>
     </SuccessTemplate>
