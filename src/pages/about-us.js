@@ -30,7 +30,7 @@ export default () => (
           <Tab>管理团队</Tab>
           <Tab>合作伙伴</Tab>
           <Tab>联系我们</Tab>
-          <Tab>职位信息</Tab>
+          <Tab>招贤纳才</Tab>
         </TabList>
 
         <TabPanel>

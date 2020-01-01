@@ -3,6 +3,7 @@ module.exports = {
     title: `北京华云慧通科技有限公司`,
     description: `探索财税大数据奥妙，为政府决策、企业服务、金融风控提供数据服务和科技赋能`,
     author: `njegos.dev`,
+    siteUrl: `https://ihyht.com`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -16,7 +17,7 @@ module.exports = {
     {
       resolve: 'gatsby-source-strapi',
       options: {
-        apiURL: 'http://58.59.7.151:1337',
+        apiURL: 'https://ihyht.com',
         contentTypes: [
           // List of the Content Types you want to be able to request from Gatsby.
           'news',
@@ -32,6 +33,8 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-smoothscroll`,
+    `gatsby-plugin-sitemap`,
+    `gatsby-plugin-robots-txt`,
     {
       resolve: `gatsby-plugin-nprogress`,
       options: {

@@ -25,7 +25,7 @@ export default () => {
 
   return (
     <Careers>
-      <h2>职位信息</h2>
+      <h2>招贤纳才</h2>
       <div className="cards">
         <ul className="card-header">
           <li>职位名称</li>

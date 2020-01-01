@@ -190,13 +190,6 @@ export default () => {
           </div>
         </div>
       </ProductModule>
-      <UseCase>
-        <h3>产品用例</h3>
-        <Image
-          draggable={false}
-          fluid={data.dataCollection.childImageSharp.fluid}
-        />
-      </UseCase>
       {/*
       <Video
         src={data.video1.video.publicURL}
